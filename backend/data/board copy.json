@@ -1,0 +1,3648 @@
+[{
+  "title": "Upco Sprint",
+  "description": "This board will be used for collaboration management on the Planday app project",
+  "createdAt": 1589983468418,
+  "createdBy": {
+    "id": "u101",
+    "fullname": "Abi Abambi"
+  },
+  "members": [
+    {
+      "id": "u101",
+      "fullname": "Tal Amit",
+      "username": "tal",
+      "imgUrl": "./assets/img/members/tal.jpg",
+      "color": "#8338ec"
+    },
+    {
+      "id": "u102",
+      "fullname": "Guy Shimon",
+      "username": "guy",
+      "imgUrl": "./assets/img/members/guy.jpg",
+      "color": "#3a86ff"
+    },
+    {
+      "id": "u103",
+      "fullname": "Shiran Elad",
+      "username": "shiran",
+      "imgUrl": "./assets/img/members/shiran.jpeg",
+      "color": "#ff006e"
+    },
+    {
+      "id": "u104",
+      "fullname": "Rotem Bublil",
+      "username": "rotem",
+      "imgUrl": "./assets/img/members/rotem.png",
+      "color": "#ffbe0b"
+    }
+  ],
+  "activities": [
+    {
+      "id": "a101",
+      "txt": "Changed Color",
+      "createdAt": 154514,
+      "byMember": {
+        "id": "u101",
+        "fullname": "Abi Abambi",
+        "imgUrl": "http://some-img"
+      },
+      "task": {
+        "id": "c101",
+        "title": "Replace Logo"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "gE1sWb",
+      "title": "UI",
+      "tasks": [
+        {
+          "id": "tl7hOU",
+          "title": "switch set status to dumb",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-13T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ]
+        },
+        {
+          "id": "trV6cr",
+          "title": "when clicking a different status collapse all the rest",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-03-29"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ]
+        },
+        {
+          "id": "t2yn4E",
+          "title": "Complete UI for demo1",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                },
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-03-28"
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal Amit",
+              "content": "fix problem with bug"
+            },
+            {
+              "creator": "Shiran Elad",
+              "content": "i can help"
+            },
+            {
+              "creator": "Guy Shimon",
+              "content": "made that dnd work"
+            }
+          ]
+        },
+        {
+          "id": "tOiAz3",
+          "title": "on status picker does not change to orange",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": []
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-27T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 13:03:13 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "Added a customer logo"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "Added a customer logo"
+            }
+          ]
+        }
+      ],
+      "groupColor": "#2ecbff"
+    },
+    {
+      "id": "gy5LnM",
+      "title": "Frontend - General",
+      "tasks": [
+        {
+          "id": "tdAYQ1",
+          "title": "Dashboards / BI",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-03-10T22"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 11:40:39 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "sdsd"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "sdsd"
+            }
+          ]
+        },
+        {
+          "id": "tkZP69",
+          "title": "Guest functionality",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "username": "guy",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-03-02T22"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 08:45:33 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "dfdd"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 08:45:06 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "dfdf"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 08:44:46 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "ghgshd"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "dfdd"
+            },
+            {
+              "creator": "Tal",
+              "content": "dfdf"
+            },
+            {
+              "creator": "Tal",
+              "content": "ghgshd"
+            }
+          ]
+        },
+        {
+          "id": "tyCQHY",
+          "title": "Routes & pages",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-03-08"
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 10:37:47 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "sdds"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 10:37:06 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "new update"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "sdds"
+            },
+            {
+              "creator": "Tal",
+              "content": "new update"
+            }
+          ]
+        },
+        {
+          "id": "tMZJTI",
+          "title": "change url to board id on task-preview",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": []
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-05T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "tXyTxS",
+          "title": "Build homepage",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": null
+            },
+            {
+              "type": "member-picker",
+              "value": []
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "groupColor": "#5b28d2"
+    },
+    {
+      "id": "gl41DR",
+      "title": "Backend",
+      "tasks": [
+        {
+          "id": "tlTzsG",
+          "title": "Load data to DB",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "tAS9ke",
+          "title": "convert to awaits",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-18T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 16:38:11 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "that was fast"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 16:37:18 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "Great job!"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "that was fast"
+            },
+            {
+              "creator": "Tal",
+              "content": "Great job!"
+            }
+          ]
+        },
+        {
+          "id": "ts6Pfe",
+          "title": "Setup database architecture in mongoDB",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": []
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-19T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ]
+        },
+        {
+          "id": "tlTzsG",
+          "title": "Load data to DB",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": ""
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "t78YOI",
+          "title": "sockets",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": ""
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ]
+        },
+        {
+          "id": "tzN8IS",
+          "title": "Auth for users",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": []
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        }
+      ],
+      "groupColor": "#c457ff"
+    },
+    {
+      "id": "gUYFvs",
+      "title": "QA",
+      "tasks": [
+        {
+          "id": "twtWvS",
+          "title": "Login / signup page + Logout",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "username": "guy",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ]
+        },
+        {
+          "id": "tHZHYI",
+          "title": "Sort Component",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "empty"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "username": "tal",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-03-16"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ]
+        },
+        {
+          "id": "tGHVTo",
+          "title": "Notifications / Chat",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Stuck"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "username": "guy",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-03-11T22"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "tM21Dc",
+          "title": "task crud",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-03-21"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "twJ3I8",
+          "title": "Loading feature",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-03-15"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ]
+        },
+        {
+          "id": "t0zknv",
+          "title": "Create Technical Design Document",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u104",
+                  "fullname": "Rotem Bublil",
+                  "username": "rotem",
+                  "imgUrl": "./assets/img/members/rotem.png",
+                  "color": "#ffbe0b"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "username": "guy",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ]
+        },
+        {
+          "id": "ti2G9v",
+          "title": "Folder structure",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "tLFRul",
+          "title": "Group List Design",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "empty"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u104",
+                  "fullname": "Rotem Bublil",
+                  "username": "rotem",
+                  "imgUrl": "./assets/img/members/rotem.png",
+                  "color": "#ffbe0b"
+                },
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-03-29"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "tHEYk5",
+          "title": "Store",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                },
+                {
+                  "id": "u104",
+                  "fullname": "Rotem Bublil",
+                  "username": "rotem",
+                  "imgUrl": "./assets/img/members/rotem.png",
+                  "color": "#ffbe0b"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ]
+        },
+        {
+          "id": "tmpXX1",
+          "title": "New Task",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "to4odq",
+          "title": "Main app component",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ]
+        },
+        {
+          "id": "thv22F",
+          "title": "group crud",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                },
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "tANzw2",
+          "title": "basic CRUDL with FE service",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "username": "guy",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "t3HMYg",
+          "title": "task details",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "username": "guy",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        }
+      ],
+      "groupColor": "#eac510"
+    },
+    {
+      "id": "gCp8Vx",
+      "title": "Miscelleneous",
+      "tasks": [
+        {
+          "id": "tB02il",
+          "title": "Create app logo",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "tsTwIo",
+          "title": "Create Design Document",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": ""
+            },
+            {
+              "type": "member-picker",
+              "value": []
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "tAOGVd",
+          "title": "Create git repository with collaboration",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "tmuMhT",
+          "title": "Upload to Hiroku",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": ""
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                },
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ],
+          "groupColor": "#2fbc34"
+        }
+      ],
+      "cmpsOrder": [
+        "status-picker",
+        "member-picker",
+        "date-picker"
+      ],
+      "groupColor": "#cb2a2a"
+    }
+  ]
+},
+{
+  "title": "Team Hero",
+  "description": "This board will be used for collaboration management on the Planday app project",
+  "createdAt": 1589983468418,
+  "createdBy": {
+    "id": "u101",
+    "fullname": "Abi Abambi"
+  },
+  "members": [
+    {
+      "id": "u101",
+      "fullname": "Tal Amit",
+      "username": "tal",
+      "imgUrl": "./assets/img/members/tal.jpg",
+      "color": "#8338ec"
+    },
+    {
+      "id": "u102",
+      "fullname": "Guy Shimon",
+      "username": "guy",
+      "imgUrl": "./assets/img/members/guy.jpg",
+      "color": "#3a86ff"
+    },
+    {
+      "id": "u103",
+      "fullname": "Shiran Elad",
+      "username": "shiran",
+      "imgUrl": "./assets/img/members/shiran.jpeg",
+      "color": "#ff006e"
+    },
+    {
+      "id": "u104",
+      "fullname": "Rotem Bublil",
+      "username": "rotem",
+      "imgUrl": "./assets/img/members/rotem.png",
+      "color": "#ffbe0b"
+    }
+  ],
+  "activities": [
+    {
+      "id": "a101",
+      "txt": "Changed Color",
+      "createdAt": 154514,
+      "byMember": {
+        "id": "u101",
+        "fullname": "Abi Abambi",
+        "imgUrl": "http://some-img"
+      },
+      "task": {
+        "id": "c101",
+        "title": "Replace Logo"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "Z6kTM",
+      "title": "Backend",
+      "tasks": [
+        {
+          "id": "tB02il",
+          "title": "Convert to awaits",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-19T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 13:05:29 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "what happened to it?"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 13:04:58 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "it started yesterday"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "what happened to it?"
+            },
+            {
+              "creator": "Tal",
+              "content": "it started yesterday"
+            }
+          ]
+        },
+        {
+          "id": "tsTwIo",
+          "title": "Load data to DB",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Stuck"
+            },
+            {
+              "type": "member-picker",
+              "value": []
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-13T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "tAOGVd",
+          "title": "Setup database architecture in mongoDB",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Stuck"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-11T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 14:34:11 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "I find it hard to fix. need some help please"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "I find it hard to fix. need some help please"
+            }
+          ]
+        },
+        {
+          "id": "tmuMhT",
+          "title": "Fix sockets across all components",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": ""
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                },
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-12T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ],
+          "groupColor": "#2fbc34"
+        }
+      ],
+      "cmpsOrder": [
+        "status-picker",
+        "member-picker",
+        "date-picker"
+      ],
+      "groupColor": "#eac510"
+    },
+    {
+      "id": "gy5LnM",
+      "title": "Frontend",
+      "tasks": [
+        {
+          "id": "tl7hOU",
+          "title": "switch set status to dumb",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "username": "tal",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "username": "guy",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-17T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 11:42:03 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "dada"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 11:40:30 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "\ndidi"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 11:39:19 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "mama"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "dada"
+            },
+            {
+              "creator": "Tal",
+              "content": "\ndidi"
+            },
+            {
+              "creator": "Tal",
+              "content": "mama"
+            }
+          ]
+        },
+        {
+          "id": "tdUEL5",
+          "title": "Fix status socket",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "username": "tal",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-17T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 12:38:23 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "\nsocketService.on('push updated', this.addTaskComment)"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "\nsocketService.on('push updated', this.addTaskComment)"
+            }
+          ]
+        },
+        {
+          "id": "twtWvS",
+          "title": "Login / signup page + Logout",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "username": "tal",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": " "
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 09:54:00 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "didi"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 09:53:55 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "shlomo"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 09:53:08 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "mama"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 09:38:25 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "wawa"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "didi"
+            },
+            {
+              "creator": "Tal",
+              "content": "shlomo"
+            },
+            {
+              "creator": "Tal",
+              "content": "mama"
+            },
+            {
+              "creator": "Tal",
+              "content": "wawa"
+            }
+          ]
+        },
+        {
+          "id": "tJnrEI",
+          "title": "CSS",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "username": "guy",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-12T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ]
+        },
+        {
+          "id": "tyCQHY",
+          "title": "Routes & pages",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Stuck"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-03-08"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 09:16:14 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "wawa"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 09:13:06 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "baba"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "wawa"
+            },
+            {
+              "creator": "Tal",
+              "content": "baba"
+            }
+          ]
+        }
+      ],
+      "groupColor": "#0080ff"
+    },
+    {
+      "id": "gCp8Vx",
+      "title": "QA",
+      "tasks": [
+        {
+          "id": "tB02il",
+          "title": "Test drag and drop functionality",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "tsTwIo",
+          "title": "Automate \"Done\" status ",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u104",
+                  "fullname": "Rotem Bublil",
+                  "username": "rotem",
+                  "imgUrl": "./assets/img/members/rotem.png",
+                  "color": "#ffbe0b"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ]
+        },
+        {
+          "id": "tAOGVd",
+          "title": "Check if task updates proper delivery",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Stuck"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 12:19:23 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "socketService.on('push updated', this.addTaskComment)\n"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 12:18:57 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "\nThe new Socket:\n\nsocketService.on('push updated', this.addTaskComment)"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 12:17:21 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "\nThe updated socket:"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 12:17:00 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "\nsocketService.on('push updated', this.addTaskComment)"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 12:16:42 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "    this.taskToSave.activities.unshift({\n        createdAt: Date(),\n        byMember: \"Tal\",\n        txt: commentText,\n      });"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "socketService.on('push updated', this.addTaskComment)\n"
+            },
+            {
+              "creator": "Tal",
+              "content": "\nThe new Socket:\n\nsocketService.on('push updated', this.addTaskComment)"
+            },
+            {
+              "creator": "Tal",
+              "content": "\nThe updated socket:"
+            },
+            {
+              "creator": "Tal",
+              "content": "\nsocketService.on('push updated', this.addTaskComment)"
+            },
+            {
+              "creator": "Tal",
+              "content": "    this.taskToSave.activities.unshift({\n        createdAt: Date(),\n        byMember: \"Tal\",\n        txt: commentText,\n      });"
+            }
+          ]
+        }
+      ],
+      "cmpsOrder": [
+        "status-picker",
+        "member-picker",
+        "date-picker"
+      ],
+      "groupColor": "#e60000"
+    }
+  ]
+},
+{
+  "title": "SW Team",
+  "description": "This board will be used for collaboration management on the Planday app project",
+  "createdAt": 1589983468418,
+  "createdBy": {
+    "id": "u101",
+    "fullname": "Abi Abambi"
+  },
+  "members": [
+    {
+      "id": "u101",
+      "fullname": "Tal Amit",
+      "username": "tal",
+      "imgUrl": "./assets/img/members/tal.jpg",
+      "color": "#8338ec"
+    },
+    {
+      "id": "u102",
+      "fullname": "Guy Shimon",
+      "username": "guy",
+      "imgUrl": "./assets/img/members/guy.jpg",
+      "color": "#3a86ff"
+    },
+    {
+      "id": "u103",
+      "fullname": "Shiran Elad",
+      "username": "shiran",
+      "imgUrl": "./assets/img/members/shiran.jpeg",
+      "color": "#ff006e"
+    },
+    {
+      "id": "u104",
+      "fullname": "Rotem Bublil",
+      "username": "rotem",
+      "imgUrl": "./assets/img/members/rotem.png",
+      "color": "#ffbe0b"
+    }
+  ],
+  "activities": [
+    {
+      "id": "a101",
+      "txt": "Changed Color",
+      "createdAt": 154514,
+      "byMember": {
+        "id": "u101",
+        "fullname": "Abi Abambi",
+        "imgUrl": "http://some-img"
+      },
+      "task": {
+        "id": "c101",
+        "title": "Replace Logo"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "gy5LnM",
+      "title": "Frontend",
+      "tasks": [
+        {
+          "id": "tdUEL5",
+          "title": "Fix status socket",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "username": "tal",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-17T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 12:38:23 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "\nsocketService.on('push updated', this.addTaskComment)"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "\nsocketService.on('push updated', this.addTaskComment)"
+            }
+          ]
+        },
+        {
+          "id": "twtWvS",
+          "title": "Login / signup page + Logout",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 09:54:00 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "didi"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 09:53:55 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "shlomo"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 09:53:08 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "mama"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 09:38:25 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "wawa"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "didi"
+            },
+            {
+              "creator": "Tal",
+              "content": "shlomo"
+            },
+            {
+              "creator": "Tal",
+              "content": "mama"
+            },
+            {
+              "creator": "Tal",
+              "content": "wawa"
+            }
+          ]
+        },
+        {
+          "id": "tD4dkz",
+          "title": "Get logo design and put on website",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "id": "tYDekb",
+          "title": "Build homepage",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": null
+            },
+            {
+              "type": "member-picker",
+              "value": []
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "groupColor": "#0080ff"
+    },
+    {
+      "id": "gE1sWb",
+      "title": "Smart Components",
+      "tasks": [
+        {
+          "id": "tl7hOU",
+          "title": "switch set status to dumb",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "username": "guy",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-17T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 11:42:03 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "dada"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 11:40:30 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "\ndidi"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 11:39:19 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "mama"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "dada"
+            },
+            {
+              "creator": "Tal",
+              "content": "\ndidi"
+            },
+            {
+              "creator": "Tal",
+              "content": "mama"
+            }
+          ]
+        },
+        {
+          "id": "trV6cr",
+          "title": "collapse the rest of the statuses\n\n",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Stuck"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                },
+                {
+                  "id": "u104",
+                  "fullname": "Rotem Bublil",
+                  "username": "rotem",
+                  "imgUrl": "./assets/img/members/rotem.png",
+                  "color": "#ffbe0b"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-03-29"
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 14:43:00 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "it passed tests "
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 11:09:03 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "I seem to have a problem implementing these"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "it passed tests "
+            },
+            {
+              "creator": "Tal",
+              "content": "I seem to have a problem implementing these"
+            }
+          ]
+        },
+        {
+          "id": "tOiAz3",
+          "title": "on status picker does not change to orange",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "username": "tal",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-04T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        }
+      ],
+      "groupColor": "#36c403"
+    },
+    {
+      "id": "Z6kTM",
+      "title": "Backend",
+      "tasks": [
+        {
+          "id": "tB02il",
+          "title": "Convert to awaits",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-19T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 13:05:29 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "what happened to it?"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 13:04:58 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "it started yesterday"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "what happened to it?"
+            },
+            {
+              "creator": "Tal",
+              "content": "it started yesterday"
+            }
+          ]
+        },
+        {
+          "id": "tsTwIo",
+          "title": "Load data to DB",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": []
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-13T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "tAOGVd",
+          "title": "Setup database architecture in mongoDB",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Stuck"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-11T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 14:34:11 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "I find it hard to fix. need some help please"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "I find it hard to fix. need some help please"
+            }
+          ]
+        },
+        {
+          "id": "tmuMhT",
+          "title": "Fix sockets across all components",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                },
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-12T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ],
+          "groupColor": "#2fbc34"
+        },
+        {
+          "id": "tREHWl",
+          "title": "REST APIs",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Stuck"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "username": "guy",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-06T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ]
+        },
+        {
+          "id": "tRAIOz",
+          "title": "Fix CORS module",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "username": "guy",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                },
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "username": "tal",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-18T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ]
+        },
+        {
+          "id": "tD8moZ",
+          "title": "User authentication",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u104",
+                  "fullname": "Rotem Bublil",
+                  "username": "rotem",
+                  "imgUrl": "./assets/img/members/rotem.png",
+                  "color": "#ffbe0b"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-20T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        }
+      ],
+      "cmpsOrder": [
+        "status-picker",
+        "member-picker",
+        "date-picker"
+      ],
+      "groupColor": "#eac510"
+    },
+    {
+      "id": "gCp8Vx",
+      "title": "QA",
+      "tasks": [
+        {
+          "id": "tM21Dc",
+          "title": "task crud",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-04T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 14:59:40 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "yes babi"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "yes babi"
+            }
+          ]
+        },
+        {
+          "id": "tB02il",
+          "title": "Test drag and drop functionality",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-05-03T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ]
+        },
+        {
+          "id": "tsTwIo",
+          "title": "Automate \"Done\" status ",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u104",
+                  "fullname": "Rotem Bublil",
+                  "username": "rotem",
+                  "imgUrl": "./assets/img/members/rotem.png",
+                  "color": "#ffbe0b"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-05-02T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ]
+        },
+        {
+          "id": "tAOGVd",
+          "title": "Check if task updates proper delivery",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-05-02T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 12:19:23 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "socketService.on('push updated', this.addTaskComment)\n"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 12:18:57 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "\nThe new Socket:\n\nsocketService.on('push updated', this.addTaskComment)"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 12:17:21 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "\nThe updated socket:"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 12:17:00 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "\nsocketService.on('push updated', this.addTaskComment)"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 12:16:42 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "    this.taskToSave.activities.unshift({\n        createdAt: Date(),\n        byMember: \"Tal\",\n        txt: commentText,\n      });"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "socketService.on('push updated', this.addTaskComment)\n"
+            },
+            {
+              "creator": "Tal",
+              "content": "\nThe new Socket:\n\nsocketService.on('push updated', this.addTaskComment)"
+            },
+            {
+              "creator": "Tal",
+              "content": "\nThe updated socket:"
+            },
+            {
+              "creator": "Tal",
+              "content": "\nsocketService.on('push updated', this.addTaskComment)"
+            },
+            {
+              "creator": "Tal",
+              "content": "    this.taskToSave.activities.unshift({\n        createdAt: Date(),\n        byMember: \"Tal\",\n        txt: commentText,\n      });"
+            }
+          ]
+        },
+        {
+          "id": "tH0dKu",
+          "title": "test flow in heroku",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": ""
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-05-04T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ]
+        }
+      ],
+      "cmpsOrder": [
+        "status-picker",
+        "member-picker",
+        "date-picker"
+      ],
+      "groupColor": "#e60000"
+    }
+  ]
+},
+{
+  "title": "SW Team Weekly",
+  "description": "This board will be used for collaboration management on the Planday app project",
+  "createdAt": 1589983468418,
+  "createdBy": {
+    "id": "u101",
+    "fullname": "Abi Abambi"
+  },
+  "members": [
+    {
+      "id": "u101",
+      "fullname": "Tal Amit",
+      "username": "tal",
+      "imgUrl": "./assets/img/members/tal.jpg",
+      "color": "#8338ec"
+    },
+    {
+      "id": "u102",
+      "fullname": "Guy Shimon",
+      "username": "guy",
+      "imgUrl": "./assets/img/members/guy.jpg",
+      "color": "#3a86ff"
+    },
+    {
+      "id": "u103",
+      "fullname": "Shiran Elad",
+      "username": "shiran",
+      "imgUrl": "./assets/img/members/shiran.jpeg",
+      "color": "#ff006e"
+    },
+    {
+      "id": "u104",
+      "fullname": "Rotem Bublil",
+      "username": "rotem",
+      "imgUrl": "./assets/img/members/rotem.png",
+      "color": "#ffbe0b"
+    }
+  ],
+  "activities": [
+    {
+      "id": "a101",
+      "txt": "Changed Color",
+      "createdAt": 154514,
+      "byMember": {
+        "id": "u101",
+        "fullname": "Abi Abambi",
+        "imgUrl": "http://some-img"
+      },
+      "task": {
+        "id": "c101",
+        "title": "Replace Logo"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "gy5LnM",
+      "title": "Frontend",
+      "tasks": [
+        {
+          "id": "twtWvS",
+          "title": "Login / signup page + Logout",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 09:54:00 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "didi"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 09:53:55 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "shlomo"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 09:53:08 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "mama"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 09:38:25 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "wawa"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "didi"
+            },
+            {
+              "creator": "Tal",
+              "content": "shlomo"
+            },
+            {
+              "creator": "Tal",
+              "content": "mama"
+            },
+            {
+              "creator": "Tal",
+              "content": "wawa"
+            }
+          ]
+        },
+        {
+          "id": "tD4dkz",
+          "title": "Get logo design and put on website",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "id": "tAcnDj",
+          "title": "Build homepage",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Stuck"
+            },
+            {
+              "type": "member-picker",
+              "value": []
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "id": "tdUEL5",
+          "title": "Fix status socket",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "username": "tal",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-17T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 12:38:23 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "\nsocketService.on('push updated', this.addTaskComment)"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "\nsocketService.on('push updated', this.addTaskComment)"
+            }
+          ]
+        }
+      ],
+      "groupColor": "#0080ff"
+    },
+    {
+      "id": "gE1sWb",
+      "title": "Smart Components",
+      "tasks": [
+        {
+          "id": "tl7hOU",
+          "title": "switch set status to dumb",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "username": "guy",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-17T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 11:42:03 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "dada"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 11:40:30 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "\ndidi"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 11:39:19 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "mama"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "dada"
+            },
+            {
+              "creator": "Tal",
+              "content": "\ndidi"
+            },
+            {
+              "creator": "Tal",
+              "content": "mama"
+            }
+          ]
+        },
+        {
+          "id": "tOiAz3",
+          "title": "on status picker does not change to orange",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "username": "tal",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-04T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        },
+        {
+          "id": "tFkn3A",
+          "title": "new task for this group",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": null
+            },
+            {
+              "type": "member-picker",
+              "value": []
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            },
+            {
+              "type": "priority-picker",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "groupColor": "#36c403"
+    },
+    {
+      "id": "Z6kTM",
+      "title": "Backend",
+      "tasks": [
+        {
+          "id": "tB02il",
+          "title": "Convert to awaits",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-19T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 13:05:29 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "what happened to it?"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 13:04:58 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "it started yesterday"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "what happened to it?"
+            },
+            {
+              "creator": "Tal",
+              "content": "it started yesterday"
+            }
+          ]
+        },
+        {
+          "id": "tsTwIo",
+          "title": "Load data to DB",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "username": "tal",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "username": "guy",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-19T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ]
+        },
+        {
+          "id": "tAOGVd",
+          "title": "Setup database architecture in mongoDB",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Stuck"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-11T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 14:34:11 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "I find it hard to fix. need some help please"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "I find it hard to fix. need some help please"
+            }
+          ]
+        },
+        {
+          "id": "tmuMhT",
+          "title": "Fix sockets across all components",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                },
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-12T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ],
+          "groupColor": "#2fbc34"
+        },
+        {
+          "id": "tREHWl",
+          "title": "REST APIs",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Stuck"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "username": "guy",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-06T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ]
+        },
+        {
+          "id": "tRAIOz",
+          "title": "Fix CORS module",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "username": "guy",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                },
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "username": "tal",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-18T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ]
+        },
+        {
+          "id": "tD8moZ",
+          "title": "User authentication",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u104",
+                  "fullname": "Rotem Bublil",
+                  "username": "rotem",
+                  "imgUrl": "./assets/img/members/rotem.png",
+                  "color": "#ffbe0b"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-20T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ]
+        }
+      ],
+      "cmpsOrder": [
+        "status-picker",
+        "member-picker",
+        "date-picker"
+      ],
+      "groupColor": "#eac510"
+    },
+    {
+      "id": "gCp8Vx",
+      "title": "QA",
+      "tasks": [
+        {
+          "id": "tM21Dc",
+          "title": "task crud",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-04-04T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 14:59:40 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "yes babi"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "yes babi"
+            }
+          ]
+        },
+        {
+          "id": "tB02il",
+          "title": "Test drag and drop functionality",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-05-03T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "High"
+            }
+          ]
+        },
+        {
+          "id": "tsTwIo",
+          "title": "Automate \"Done\" status ",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u104",
+                  "fullname": "Rotem Bublil",
+                  "username": "rotem",
+                  "imgUrl": "./assets/img/members/rotem.png",
+                  "color": "#ffbe0b"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-05-02T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ]
+        },
+        {
+          "id": "tAOGVd",
+          "title": "Check if task updates proper delivery",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u101",
+                  "fullname": "Tal Amit",
+                  "imgUrl": "./assets/img/members/tal.jpg",
+                  "color": "#8338ec"
+                },
+                {
+                  "id": "u102",
+                  "fullname": "Guy Shimon",
+                  "imgUrl": "./assets/img/members/guy.jpg",
+                  "color": "#3a86ff"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-05-02T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Low"
+            }
+          ],
+          "activities": [
+            {
+              "createdAt": "Mon Apr 04 2022 12:19:23 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "socketService.on('push updated', this.addTaskComment)\n"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 12:18:57 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "\nThe new Socket:\n\nsocketService.on('push updated', this.addTaskComment)"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 12:17:21 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "\nThe updated socket:"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 12:17:00 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "\nsocketService.on('push updated', this.addTaskComment)"
+            },
+            {
+              "createdAt": "Mon Apr 04 2022 12:16:42 GMT+0300 (Israel Daylight Time)",
+              "byMember": "Tal",
+              "txt": "    this.taskToSave.activities.unshift({\n        createdAt: Date(),\n        byMember: \"Tal\",\n        txt: commentText,\n      });"
+            }
+          ],
+          "comments": [
+            {
+              "creator": "Tal",
+              "content": "socketService.on('push updated', this.addTaskComment)\n"
+            },
+            {
+              "creator": "Tal",
+              "content": "\nThe new Socket:\n\nsocketService.on('push updated', this.addTaskComment)"
+            },
+            {
+              "creator": "Tal",
+              "content": "\nThe updated socket:"
+            },
+            {
+              "creator": "Tal",
+              "content": "\nsocketService.on('push updated', this.addTaskComment)"
+            },
+            {
+              "creator": "Tal",
+              "content": "    this.taskToSave.activities.unshift({\n        createdAt: Date(),\n        byMember: \"Tal\",\n        txt: commentText,\n      });"
+            }
+          ]
+        },
+        {
+          "id": "tH0dKu",
+          "title": "test flow in heroku",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": ""
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "u103",
+                  "fullname": "Shiran Elad",
+                  "username": "shiran",
+                  "imgUrl": "./assets/img/members/shiran.jpeg",
+                  "color": "#ff006e"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": "2022-05-04T21:00:00.000Z"
+            },
+            {
+              "type": "priority-picker",
+              "value": "Medium"
+            }
+          ]
+        }
+      ],
+      "cmpsOrder": [
+        "status-picker",
+        "member-picker",
+        "date-picker"
+      ],
+      "groupColor": "#e60000"
+    }
+  ]
+}
+]
