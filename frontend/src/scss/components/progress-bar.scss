@@ -1,0 +1,46 @@
+.status-bar {
+  display: flex;
+  flex: 1;
+
+  .left-side{
+    min-width: 400px;
+    flex-basis: 100%;
+  }
+  .right-side {
+    min-width: 620px;
+    .status-container {
+      background-color: $clr10;
+      width: 140px;
+      height: toRem(40);
+      > ul {
+        // margin: 0 8px;
+        // margin-left:10px;
+        // min-width: 100%;
+        > li > div {
+          margin-top: 4px;
+        }
+      }
+    }
+    .member-picker{
+      width: 160px;
+      cursor:unset;
+      &:hover{
+        background-color: unset;
+      }
+    }
+    
+    .date-picker{
+      width:140px;
+      cursor:unset;
+      &:hover{
+        background-color: unset;
+      }
+    }
+    .priority-container{
+      max-width:140px;
+    }
+  }
+
+  // margin: auto;
+  // margin-top: 30px;
+}

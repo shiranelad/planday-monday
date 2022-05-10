@@ -1,0 +1,15 @@
+.priority-picker {
+  @include colPicker;
+}
+.low {
+  background-color: #93bd3a;
+}
+.high {
+  background-color: #ec3390;
+}
+.medium {
+  background-color: #68a1bd;
+}
+.empty{
+  background-color: $stClrEmpty;
+}

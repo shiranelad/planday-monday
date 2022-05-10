@@ -1,0 +1,20 @@
+.dashboard {
+    border-top: 1px solid $clr7;
+    padding-top: 30px;
+    gap: 10%;
+}
+.bar-tasks-per-member{
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    width: 45% ;
+}
+
+.dash-header{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bar-tasks-per-group{
+    width: 45%;
+}

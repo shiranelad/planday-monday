@@ -1,0 +1,299 @@
+{
+  "_id": "b101",
+  "title": "Robot dev proj",
+  "description": " this board....",
+  "createdAt": 1589983468418,
+  "createdBy": {
+    "_id": "u101",
+    "fullname": "Abi Abambi",
+    "imgUrl": "http://some-img"
+  },
+  "members": [
+    {
+      "id": "u101",
+      "fullname": "Tal amit",
+      "imgUrl": "https://www.google.com"
+    },
+    {
+      "id": "u102",
+      "fullname": "guy shimon",
+      "imgUrl": "https://www.google.com"
+    },
+    {
+      "id": "u103",
+      "fullname": "shiran elad",
+      "imgUrl": "https://www.google.com"
+    }
+  ],
+  "activities": [
+    {
+      "id": "a101",
+      "txt": "Changed Color",
+      "createdAt": 154514,
+      "byMember": {
+        "_id": "u101",
+        "fullname": "Abi Abambi",
+        "imgUrl": "http://some-img"
+      },
+      "task": {
+        "id": "c101",
+        "title": "Replace Logo"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "dfg56",
+      "title": "Group 1",
+      "tasks": [
+        {
+          "id": "t101",
+          "title": "replace items",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Status"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "fhrf*^%hfdg",
+                  "username": "Lili",
+                  "fullname": "Lili Abambi",
+                  "imgUrl": "http://some-img.jpg",
+                  "color": "FFF833"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            }
+          ],
+          "comments": [
+            { "creator": "Lili Abambi", "content": "can some one help me" },
+            { "creator": "tal amit", "content": "fix problem with bug" },
+            { "creator": "shiarn elad", "content": "i can help" },
+            { "creator": "Guy shimon ", "content": "made that dnd work" }
+          ]
+        },
+        {
+          "id": "t102",
+          "title": "implement D&D",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "m303",
+                  "username": "Meir",
+                  "fullname": "Meir Abambi",
+                  "imgUrl": "https://randomuser.me/api/portraits/men/27.jpg"
+                },
+                {
+                  "id": "mfdg",
+                  "username": "Momi",
+                  "fullname": "Momi Alfasi",
+                  "imgUrl": "https://randomuser.me/api/portraits/men/22.jpg"
+                },
+                {
+                  "id": "m404g",
+                  "username": "Meni",
+                  "fullname": "some men",
+                  "imgUrl": "https://randomuser.me/api/portraits/men/24.jpg"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "groupColor": "#579bfc"
+    },
+    {
+      "id": "g093",
+      "title": "Group 2",
+      "tasks": [
+        {
+          "id": "t101",
+          "title": "learn scss",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "m3748",
+                  "username": "meir",
+                  "fullname": "Meir Abambi",
+                  "imgUrl": "https://randomuser.me/api/portraits/men/55.jpg"
+                },
+                {
+                  "id": "m1hfdg",
+                  "username": "meir",
+                  "fullname": "Meir Abambi",
+                  "imgUrl": "https://randomuser.me/api/portraits/men/55.jpg"
+                },
+                {
+                  "id": "m304^%hfdg",
+                  "username": "meir",
+                  "fullname": "Meir Abambi",
+                  "imgUrl": "https://randomuser.me/api/portraits/men/55.jpg"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            }
+          ]
+        },
+        {
+          "id": "t101",
+          "title": "replace logo",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "Status"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "fhrhfdg",
+                  "username": "Meir",
+                  "fullname": "Meir Abambi",
+                  "imgUrl": "https://randomuser.me/api/portraits/men/28.jpg"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            }
+          ]
+        },
+        {
+          "id": "t101",
+          "title": "learn js logo",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "f^%hfdg",
+                  "username": "meir",
+                  "fullname": "Meir Abambi",
+                  "imgUrl": "https://randomuser.me/api/portraits/men/38.jpg"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "groupColor": "#a25ddc"
+    },
+    {
+      "id": "jkjsdf78",
+      "title": "Group 3",
+      "tasks": [
+        {
+          "id": "t101",
+          "title": "nake it happen",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "done"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "fhrf5093g",
+                  "username": "Meir",
+                  "fullname": "Meir Abambi",
+                  "imgUrl": "https://randomuser.me/api/portraits/men/28.jpg"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            }
+          ]
+        },
+        {
+          "id": "t101",
+          "title": "nake it happen",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "working on it"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "hfdg",
+                  "username": "shiran",
+                  "fullname": "shiran elad",
+                  "imgUrl": "http://some-img.jpg"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            }
+          ]
+        },
+        {
+          "id": "t103",
+          "title": "make it happen again",
+          "cols": [
+            {
+              "type": "status-picker",
+              "value": "stuck"
+            },
+            {
+              "type": "member-picker",
+              "value": [
+                {
+                  "id": "708fdg",
+                  "username": "guy",
+                  "fullname": "guy shimon",
+                  "imgUrl": "http://some-img.jpg"
+                }
+              ]
+            },
+            {
+              "type": "date-picker",
+              "value": null
+            }
+          ]
+        }
+      ],
+      "groupColor": "##9cd326"
+    }
+  ],
+  "cmpsOrder": ["status-picker", "member-picker", "date-picker"]
+}

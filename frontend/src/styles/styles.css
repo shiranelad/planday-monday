@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.app-sidebar {
+  position: absolute;
+  width: 66px;
+  height: 100vh;
+  background-color: #292f4c;
+  top: 0; }
+  .app-sidebar > img {
+    width: 25px;
+    padding: 7px;
+    margin: 8px 8px;
+    box-sizing: unset; }
+    .app-sidebar > img:hover {
+      background-color: #000;
+      border-radius: 8px; }

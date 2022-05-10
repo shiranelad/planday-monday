@@ -1,0 +1,30 @@
+.board-options {
+    padding: 0.5%;
+    position: absolute;
+    z-index: 101;
+    height: fit-content;
+    width: toRem(200);
+    top: 115%;
+    right:10px;
+    background-color: #fff;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 20px 2px $clr6;
+    
+    .input-container {
+        width: 100%;
+        text-align: start;
+        padding: 2%;
+  
+      .duplicate{
+        @include mkIcon('\f30c');
+      }
+      .remove {
+        @include mkIcon('\f2ff');
+      }
+  
+      &:hover {
+        @include hoverHeader;
+      }
+    }
+  }
+  

@@ -1,0 +1,16 @@
+.date-picker {
+  @include colPicker;
+  .el-date-editor.el-input,
+  .el-date-editor.el-input__inner {
+    width: unset;
+  }
+  .el-input__inner {
+    text-align: center;
+    background-color: transparent;
+    box-shadow: none;
+    font-family: 'Roboto 300';
+  }
+  .el-icon.el-input__icon svg {
+    display: none;
+  }
+}

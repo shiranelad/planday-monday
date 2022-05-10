@@ -1,0 +1,14 @@
+.b-wrapper {
+    max-width:170px;
+    min-width:170px;
+
+    svg {
+        width:100%;
+        max-width:30px;
+    }
+    .ellipsis{
+        @include ellipsis;
+        width:100%;
+        // padding-left:20px;    
+    }
+}

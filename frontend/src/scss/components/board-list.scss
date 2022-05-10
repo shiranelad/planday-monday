@@ -1,0 +1,203 @@
+.board-list {
+  // font-family: 'Roboto 500';
+  color: $clr9;
+  position: sticky;
+  z-index:10;
+  left: 66px;
+  background-color: $clr4;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid $clr18;
+  // animation-duration: 0.1s;
+  // animation-timing-function: cubic-bezier(0, 0, 0.35, 1);
+  // animation-delay: 0s;
+  padding: 0 16px;
+  width: 30px;
+
+  @keyframes slideInFromLeft {
+    0% {
+      transition: 0.2s ease;
+      width: 30px;
+    }
+    100% {
+      width: 255;
+      // transform: translateX(0%);
+    }
+  }
+
+  .collapse-btn {
+    border: 1px solid;
+    border-color: $clr18;
+    border-radius: 20px;
+    background-color: $clr8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 3px 9px;
+    position: absolute;
+    top: 20px;
+    z-index: 100;
+    transition: background-color 100ms ease, padding-left 100ms ease,
+      padding-right 100ms ease, border-color 100ms ease, color 100ms ease;
+    animation-name: slideInFromLeft;
+    animation-duration: 0.3s;
+    animation-timing-function: cubic-bezier(0, 0, 0.35, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    font-size: 18px;
+    transition: transform 100ms ease;
+    // transform: rotate(-180deg);
+
+    &.is-expanded {
+      // transition: transform 100ms ease;
+      transform: rotate(-180deg);
+      // animation-name: slideInFromLeft;
+      // animation-duration: 0.15s;
+      // animation-timing-function: cubic-bezier(0, 0, 0.35, 1);
+      // animation-delay: 0s;
+      // animation-iteration-count: 1;
+      // animation-direction: normal;
+
+      &.fa-angle-right{
+          transform: rotate(180deg);
+      }
+    }
+    &:hover {
+      background-color: $clr15;
+      border-color: $clr15;
+      color: #fff;
+      padding-left: 16px;
+    }
+    &::before {
+      @include mkIcon('\f105');
+    }
+    &.is-pinned {
+      right: toRem(-14);
+    }
+  }
+
+  .top-bl-container {
+    padding: 0 16px 16px 14px;
+  }
+
+  .menu-buttons {
+    padding-bottom: 16px;
+  }
+
+  .title-box-container {
+    margin: 16px 0;
+    .title-container {
+      > h1 {
+        font-size: 0.875rem;
+        font-family: 'Roboto 300';
+        margin: 10px 0;
+        color: $clr5;
+      }
+      .elipsis {
+        width: 15px;
+      }
+    }
+    .ws-name {
+      font-family: 'Roboto 700';
+      border: 1px solid $clr5;
+      padding: 10px;
+      border-radius: 4px;
+      .ws-title {
+        margin-left: 10px;
+        color: $clr9;
+        padding-bottom: 4px;
+      }
+      > .ws-icon {
+        color: $clr8;
+        margin: 0 0 4px 0;
+        background-color: $clr17;
+        border-radius: 8px;
+        padding: 2px 5px;
+        position: relative;
+        line-height: 24px;
+        .house-icon {
+          color: $clr9;
+          @include mkIcon('\f340');
+          &:before {
+            padding: 0 2px;
+          }
+          // border: 1px solid black;
+          position: absolute;
+          width: 12.5px;
+          line-height: 1;
+          display: inline-block;
+          font-style: normal;
+          font-size: 10px;
+          bottom: -3px;
+          right: -4px;
+          border-top-left-radius: 10px;
+          background-color: $clr4;
+          padding: 1px 0 1px 0;
+        }
+      }
+    }
+  }
+
+  .spacer {
+    border-bottom: 1px solid;
+    border-color: $clr18;
+    // margin: 0 20px;
+  }
+  .board-names-list {
+    line-height: toRem(24);
+    padding-top: toRem(16);
+    
+    .remove-board {
+      // margin: 0 8px;
+      align-items: center;
+      justify-content: center;
+      // padding: 2px 5px;
+      cursor:pointer;
+    }
+  }
+
+  .bl-btn {
+    // border: 1px solid black;
+    display: flex;
+    padding: 0 3px 0 6px;
+    font-size: 0.875rem;
+    min-width:225px;
+    
+    color: $clr9;
+    // border: 1px solid black;
+    height: toRem(34);
+    align-items: center;
+    font-family: 'Roboto 400';
+    // padding: 0 3px 0 6px;
+    &:hover {
+      background-color: $clr7;
+      border-radius: 4px;
+    }
+    .svg-icon {
+      margin-bottom: 3px;
+      align-items: center;
+    }
+    > span {
+      margin: 0 8px;
+      align-items: center;
+      padding: 2px 5px;
+    }
+  }
+
+  .elipsis-board{
+    width:15px; 
+    height:20px;
+    opacity:0.6;
+    cursor:pointer;
+
+  }
+
+  &.is-expanded {
+    min-width: toRem(255);
+    padding: 0 16px;
+  }
+}

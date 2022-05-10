@@ -1,0 +1,7 @@
+03/04/2022, 8:53:51 - INFO - Server is running on port: 3030 
+03/04/2022, 20:57:56 - INFO - Server is running on port: 3030 
+03/04/2022, 21:08:08 - INFO - Server is running on port: 3030 
+04/04/2022, 15:23:16 - INFO - Server is running on port: 3030 
+04/04/2022, 15:32:56 - ERROR - while finding board [object Object] | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters (sid: IBPfTybUCtvdybbkJnAYRZt_cGCO6HJh)
+04/04/2022, 15:32:56 - ERROR - Failed to get board | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters (sid: IBPfTybUCtvdybbkJnAYRZt_cGCO6HJh)
+04/04/2022, 20:32:24 - INFO - Server is running on port: 3030 

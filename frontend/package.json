@@ -1,0 +1,35 @@
+{
+  "name": "funday",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5050",
+    "start": "node-sass --watch -o src/styles src/scss"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^1.1.4",
+    "axios": "^0.26.1",
+    "chart.js": "^3.7.1",
+    "element-plus": "^2.1.4",
+    "node-sass": "^7.0.1",
+    "saas": "^1.0.0",
+    "sass": "^1.49.9",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1",
+    "vue": "^3.2.31",
+    "vue-chart-3": "^3.1.8",
+    "vue-chartjs": "^4.0.4",
+    "vue-router": "^4.0.12",
+    "vue3-smooth-dnd": "^0.0.2",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.2",
+    "babel-plugin-component": "^1.1.1",
+    "unplugin-auto-import": "^0.6.6",
+    "unplugin-element-plus": "^0.3.2",
+    "unplugin-vue-components": "^0.18.4",
+    "vite": "^2.8.4"
+  }
+}

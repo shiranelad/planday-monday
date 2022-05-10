@@ -1,0 +1,248 @@
+.header {
+  padding: 30px 30px 0 30px;
+
+  .el-button--primary {
+    height: 32px;
+    width: 75.5px;
+    background-color: #0073ea;
+    border-color: #0073ea;
+
+    &.el-dropdown__caret-button {
+      height: 32px;
+      width: 28px;
+      background-color: #0073ea;
+      border-color: #0073ea;
+    }
+  }
+
+  .btn-container {
+    margin-top: 20px;
+    & > * {
+      @include headerBtn;
+      &:hover {
+        @include hoverHeader;
+      }
+    }
+
+    .h-btn {
+      color: $clr9;
+    }
+
+    .main {
+      @include mkIcon("\f420");
+    }
+    .timeline {
+      @include mkIcon("\f211");
+    }
+    .more {
+      &::after {
+        content: "\f106";
+
+        padding: 0 5px;
+        font-family: "IconFont";
+        font-style: "normal";
+      }
+    }
+    .add {
+      @include mkIcon("\f47b");
+    }
+  }
+
+  .description {
+    color: $clr5;
+    font-size: toRem(14);
+    font-family: "Roboto 400";
+    @include stickyContent;
+    padding: 2px;
+    min-height: toRem(19);
+    // margin-top: 20px;
+    width: 70%;
+    &:hover {
+      @include hoverToEditTxt;
+    }
+    &:focus {
+      @include hoverToEditTxt;
+    }
+    &:empty:before {
+      content: attr(data-placeholder);
+    }
+  }
+  .board-header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .board-header-left {
+      max-width: 60%;
+      @include stickyContent;
+
+      .btn-hover {
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        border-radius: 4px;
+        background-color: transparent;
+        &:hover {
+          background-color: $clr7;
+        }
+      }
+      // .info-star {
+      //   z-index: 1;
+
+      .info {
+        // padding: 0 8px;
+        color: $clr5;
+        z-index: 1;
+        // @include headerBtn;
+        text-decoration: none !important;
+        text-align: center;
+        width: toRem(24);
+        font-size: toRem(16);
+        padding-top: 1px;
+        &.is-full {
+          @include mkIcon("\f345");
+        }
+        &.is-empty {
+          @include mkIcon("\f344");
+        }
+      }
+      .star {
+        padding: 0 4px;
+        z-index: 1;
+        &.is-off {
+          // @include headerBtn;
+          @include mkIcon("\f3dc");
+        }
+        &.is-on {
+          @include mkIcon("\f3db");
+          color: #ffcb00;
+          transform: scale(1.2);
+          text-decoration-style: solid;
+          padding: 0;
+        }
+      }
+      .flex {
+        justify-content: start;
+        align-items: center;
+      }
+      // }
+
+      .board-title {
+        line-height: toRem(40);
+        font-size: toRem(32);
+        font-weight: 100;
+        flex-basis: 100%;
+        max-height: toRem(40);
+        @include ellipsis;
+        padding: 0 3px;
+
+        @media (max-width: 1450px) {
+          font-size: toRem(24);
+        }
+
+        &:hover {
+          outline: solid $clr18 1px;
+          cursor: text;
+          border-radius: 4px;
+        }
+        &:focus {
+          @include hoverToEditTxt;
+        }
+      }
+
+      &.flex {
+        justify-content: space-between;
+        .board-actions {
+          flex-basis: 40%;
+          &.flex {
+            padding: 2px;
+            justify-content: space-between;
+          }
+        }
+        // .board-title {
+        //   // flex-basis: 30%;
+        //   text-overflow: ellipsis;
+        //   overflow: hidden;
+
+        //   &:focus {
+        //     @include hoverToEditTxt;
+        //   }
+        // }
+      }
+    }
+
+    .board-header-right {
+      white-space: nowrap;
+      color: $clr9;
+      font-family: "Roboto 400";
+      // width: 30rem;
+      > * {
+        font-size: toRem(14);
+        line-height: 24px;
+        height: 32px;
+        padding: 4px 8px;
+        align-items: center;
+      }
+      flex: 0 0 auto;
+      .last-seen {
+        .last {
+          font-size: toRem(14);
+          line-height: 24px;
+          height: 32px;
+
+          min-width: 100px;
+          padding: 4px 8px;
+          white-space: nowrap;
+          > * {
+            padding-right: 10px;
+          }
+        }
+      }
+      .invite {
+        @include headerBtn;
+        line-height: 24px;
+        height: 32px;
+        padding-left: 4px;
+
+        &::before {
+          @include mkIcon("\f3fb");
+          // margin:500px;
+        }
+
+        &:hover {
+          background-color: $clr7;
+        }
+
+      }
+      .activity {
+        @include headerBtn;
+        line-height: 24px;
+        height: 32px;
+
+        &::before {
+          @include mkIcon("\f468");
+        }
+        &:hover {
+          background-color: $clr7;
+        }
+      }
+      .add {
+        border: 1px solid #bdbdbd;
+        border-radius: 0.3em;
+        &::before {
+          @include mkIcon("\f47b");
+        }
+        &:hover {
+          background-color: $clr7;
+        }
+      }
+    }
+  }
+}

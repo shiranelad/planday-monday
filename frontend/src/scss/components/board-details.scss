@@ -1,0 +1,36 @@
+.board-details {
+    color: $clr9;
+    height:100%;
+    flex:1;
+    // width: 100%;
+
+    // .header {
+    //     display: flex;
+    //     flex-direction: column;
+    //     .title {
+    //         line-height: 40px;
+    //     }
+    //     .description {
+    //         max-height: 65px;
+    //     }
+    // }
+
+    .group-list {
+        box-sizing: content-box;
+        padding-bottom: 40px;
+        padding-top: 18px;
+        // padding-left: 16px;
+        // padding-right: 30px;
+        vertical-align: baseline;
+        height: 100%;
+        width: 100%; 
+        border-color: black;
+        // min-width: 964px;
+        // height: 1972px;
+    }
+
+    .bottom-board{
+        padding-right: 30px;
+        padding-left: 25px;
+    }
+}

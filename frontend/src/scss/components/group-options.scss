@@ -1,0 +1,53 @@
+.group-options {
+  padding: 0.5%;
+  position: absolute;
+  height: fit-content;
+  width: toRem(200);
+  top: 115%;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 0.3em;
+  box-shadow: 0px 0px 20px 2px $clr6;
+
+  .input-container {
+    width: 100%;
+    text-align: start;
+    padding: 2%;
+
+    label[for='duplicate'] {
+      @include mkIcon('\f30c');
+    }
+    label[for='remove'] {
+      @include mkIcon('\f2ff');
+    }
+
+    &:hover {
+      @include hoverHeader;
+    }
+
+    &.color-input {
+      &.flex {
+        align-items: center;
+
+        & :last-child {
+          padding-inline-start: toRem(12);
+        }
+      }
+    }
+
+    input[type='color'] {
+      -webkit-appearance: none;
+      border: none;
+      width: toRem(25);
+      height: toRem(22);
+      background: transparent;
+    }
+    input[type='color']::-webkit-color-swatch-wrapper {
+      padding: 0;
+    }
+    input[type='color']::-webkit-color-swatch {
+      border: none;
+      border-radius: 50%;
+    }
+  }
+}

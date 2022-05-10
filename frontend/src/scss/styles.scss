@@ -1,0 +1,46 @@
+// SETUP
+@import 'setup/typography';
+@import 'setup/variables';
+@import 'setup/mixins';
+@import 'setup/functions';
+
+// BASICS
+@import 'basics/base';
+@import 'basics/helper';
+@import 'basics/layout';
+
+// COMPONENTS
+@import 'components/app-container.scss';
+@import 'components/home-view.scss';
+@import 'components/app-sidebar.scss';
+@import 'components/task-details.scss';
+@import 'components/board-header.scss';
+@import 'components/app-filter.scss';
+@import 'components/board-options.scss';
+@import 'components/board-list.scss';
+@import 'components/board-details.scss';
+@import 'components/board-preview.scss';
+@import 'components/group.scss';
+@import 'components/group-options.scss';
+@import 'components/group-labels.scss';
+@import 'components/status-picker.scss';
+@import 'components/date-picker.scss';
+@import 'components/member-picker.scss';
+@import 'components/task-preview.scss';
+@import 'components/task-details.scss';
+@import 'components/task-list.scss';
+@import 'components/date-picker.scss';
+@import 'components/progress-bar.scss';
+// @import 'components/status-bar.scss';
+@import 'components/last-seen.scss';
+@import 'components/home-page.scss';
+@import'components/priority-picker.scss';
+@import'components/dashboard.scss';
+
+
+// @import 'components/filter';
+// @import 'components/teaser';
+// @import 'components/list';
+// @import 'components/news';
+// @import 'components/cards';
+// @import 'components/sidebar';

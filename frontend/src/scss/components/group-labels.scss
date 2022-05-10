@@ -1,0 +1,62 @@
+/* NOT IN USE  */
+.group-labels {
+  position: absolute;
+  z-index: -1;
+
+  // width: calc(100% - 35px);
+  // margin-inline-start: 35px;
+  // line-height: 40px;
+
+  .left-side {
+    flex: 1;
+    flex-basis: 100%;    
+    min-width: 430px;
+    @include stickyContent;
+  .title {
+      // flex-basis: 454px;
+      background-color: blue;
+      padding: 100px;
+    }
+  }
+
+  .right-side {
+    border: 1px solid black;
+  
+    display: flex;
+    flex: 1;
+    max-width:620px;
+    .labels {
+      flex: 1;
+      width: 100%;
+
+      .label {
+        transition: 0.2s ease;
+        text-align: center;
+        // background-color: antiquewhite;
+        width: calc(100% / 4 - 2.5px);
+        text-transform: capitalize;
+
+        &:hover {
+          background-color: $clr6;
+
+        }
+
+        &.status-picker,
+        &.date-picker,
+        &.priority-picker {
+          @include colPicker;
+         
+        }
+        &.member-picker {
+          width: 100%;
+          @include memberPicker;
+        }
+
+        // &.priority {
+        //   // transform: translateX(-5%);
+        //   padding-inline-end: 2%;
+        // }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.home-wrapper {
+  .welcome {
+    z-index: 10;
+    color: #565656;
+    background-color: rgba(255, 255, 255, 0.636);
+    box-shadow: 0px 0px 30px 3px #565656;
+    width: 50vw;
+    height: 50vh;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    transform: translateX(12%);
+    border-radius: 1em;
+
+    .links-container {
+      width: 50%;
+      &.flex {
+        justify-content: space-between;
+        .go-to {
+          text-decoration: overline;
+          color: #00ca72;
+        }
+      }
+    }
+    .name {
+      color: #fb275d;
+    }
+
+    .subtitle,
+    p {
+      color: #565656;
+    }
+    &.flex {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    & > * {
+      padding: 2em;
+    }
+  }
+  .bulbs-container {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+
+    .bulb {
+      border-radius: 1em;
+      position: fixed;
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+    }
+    .green {
+      background-color: #00ca72;
+      top: 80%;
+      left: 62%;
+    }
+    .yellow {
+      background-color: #ffcc00;
+      top: 33%;
+      left: 14%;
+
+      // animation: myAnim 8s linear 0s infinite alternate-reverse both;
+    }
+    .red {
+      left: 74%;
+      // animation: myAnim 8s linear 0s infinite alternate-reverse both;
+      background-color: #fb275d;
+    }
+  }
+}

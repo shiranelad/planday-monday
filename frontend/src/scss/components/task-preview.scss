@@ -1,0 +1,185 @@
+.task-preview {
+  top: 40px;
+  margin-bottom:1px;
+  color: $clr9;
+  height: 35px;
+  line-height: 35px;
+  padding-inline-start: 30px;
+  cursor: pointer;
+  // border-bottom: 1px solid $clr7;
+  // margin-bottom:1px;
+  justify-content: start;
+  width: 100%;
+  flex: 1;
+  // font-family: 'Roboto 400';
+  
+
+  .btn-remove-task {
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 30px;
+    left: 0px;
+    height: 100%;
+
+    margin-top: 7px;
+    cursor: pointer;
+    background-color: $clr18;
+
+    height: 18px;
+    width: 18px;
+    font-size: 15px;
+
+    visibility: visible;
+  }
+
+  .btn-remove-task-hidden {
+    visibility: hidden;
+  }
+
+  .task-left-side {
+@include stickyContent;
+  
+    border-bottom: 1px solid $clr7;
+    background-color: $clr10;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    height: 100%;
+    text-align: start;
+    // flex: 0.5;
+    padding: 0 10px 0 0;
+    border-right: 1px solid $clr8;
+
+    .side-indicator {
+      flex: 0 0 8px;
+    }
+    .title-chat {
+      flex: 1;
+      display: flex;
+      padding: 0px 10px;
+      align-items: center;
+      font-size: 24px;
+      line-height: toRem(36);
+      justify-content: center;
+      position: relative;
+      // flex-basis: 100%;    
+      min-width: 400px;
+      // max-width: 800px;
+      &:focus {
+        background-color: $clr13;
+      }
+      .title-edit {
+        margin-inline-end: 5px;
+        display: flex;
+        flex: 1;
+        align-items: center;
+
+        min-width: 0;
+        padding-left: 10px;
+        line-height: 23px;
+        text-decoration: none;
+        color: $clr9;
+        font-weight: 400;
+        font-size: 0.8125rem;
+        .task-title {
+          padding: 2px 5px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          &.mark-outline {
+            outline: $clr11 1px solid;
+            border-radius: 1px;
+          }
+          &.bgc-white {
+            background-color: $clr8;
+            width: 100%;
+          }
+          &:focus {
+            outline: 1px solid gray;
+          }
+        }
+        .edit {
+          margin-left: 8px;
+          cursor: pointer;
+          height: 24px;
+          flex: initial;
+          margin-left: 8px;
+          padding-left: 8px;
+          padding-right: 8px;
+          border-radius: 4px;
+          line-height: 22px;
+          padding-top: 2px;
+          outline: 0;
+          border: 0;
+          color: $clr5;
+          background-color: transparent;
+          &:hover {
+            background-color: $clr8;
+          }
+        }
+      }
+
+      .chat {
+        position: relative;
+          .comments-indicator {
+            position: absolute;
+            font-size: toRem(8);
+            padding: toRem(2) toRem(5);
+            top: 50%;
+            left: 50%;
+            z-index: 3;
+            background-color: $clr16;
+            color: #fff;
+            border-radius: 3rem;
+            line-height: normal;
+            font-family: 'Roboto 500';
+          }
+       
+          .on{
+            color:$clr16
+          }
+      }
+
+      .chat-without-update {
+        color: $clr11;
+        overflow: hidden;
+        position: relative;
+        font-size: 24px;
+        text-align: left;
+        margin-top: 10px;
+        &:hover {
+          color: $clr16;
+        }
+      }
+    }
+  }
+
+  .task-right-side {
+    border-bottom: 1px solid $clr7;
+    background-color: $clr10;
+    // flex: 1;
+    max-width:620px;
+    display:flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    .dyn-cmp {
+      width: 100%;
+      border-right: $clr8 1px solid;
+      .task-col-comp {
+        font-size: toRem(14);
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .right-indicator {
+      max-width: 38px;
+      min-width: 38px;
+      border-right: 8px solid $clr12;
+    }
+  }
+}

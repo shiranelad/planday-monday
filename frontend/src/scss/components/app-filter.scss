@@ -1,0 +1,46 @@
+.board-filter {
+  padding: toRem(16) 0;
+  border-top: $clr18 1px solid;
+
+  > el-dropdown {
+    background-color: $clr15;
+    color: $clr8;
+  }
+
+  .filter {
+    margin-inline-start: toRem(6);
+
+    & > * {
+      @include headerBtn;
+      height: 32px;
+     padding: 0 16px;
+
+      // font-size: toRem(15);
+      // font-weight:300;
+      // height:toRem(28);
+      // padding-left: toRem(5);
+
+      &:hover {
+        @include hoverHeader;
+      }
+    }
+    .search {
+      @include mkIcon("\f3aa");
+      &:focus{
+        border-radius:4px;
+        border: 1px solid $clr7;
+
+      }
+    }
+    .person {
+      @include mkIcon("\f1c7");
+    }
+
+    .filter {
+      @include mkIcon("\f333");
+    }
+    .sort {
+      @include mkIcon("\f3d4");
+    }
+  }
+}
