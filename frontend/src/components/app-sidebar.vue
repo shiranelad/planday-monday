@@ -1,6 +1,6 @@
 <template>
-  <aside class="app-sidebar">
-    <img class="sb-hover" src="../assets/logo-no-margin.png" alt="" />
+  <aside class="app-sidebar" v-if="showSideBar">
+    <img class="sb-hover" src="../assets/logo-no-margin.png" alt="" @click="goHome"/>
     <div class="btn-container flex col space-between">
       <div class="nav-top-btns">
         <div class="svg-container" @click="goHome">
@@ -120,12 +120,18 @@
 <script>
 export default {
   data() {
-    return {}
+    return {};
   },
   methods: {
     goHome() {
-      this.$router.push({ name: 'home' })
+      this.$router.push({ name: "home" });
     },
   },
-}
+
+  computed: {
+    showSideBar() {
+      return this.$store.getters.showSideBar;
+    },
+  },
+};
 </script>

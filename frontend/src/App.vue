@@ -1,7 +1,7 @@
 <template>
   <section class="app-container container">
-      <app-sidebar />
-      <border-list />
+    <app-sidebar />
+    <border-list />
     <router-view />
   </section>
 </template>

@@ -2,8 +2,6 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import boardDetails from '../views/board-details.vue'
 // import boardList from '../components/board/board-list.vue'
-// import taskDetails from '../views/task-details.vue'
-
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -14,21 +12,15 @@ const router = createRouter({
       component: HomeView,
     },
     // {
-    //   path: '/board/',
-    //   name: 'board-list',
-    //   component: boardList,
+    //   path: '/board/:boardId?',
+    //   name: 'board-app',
+    //   component: boardApp,
     // },
     {
       path: '/board/:boardId?',
       name: 'board-details',
       component: boardDetails,
     },
-    // {
-    //   path: '/board/:boardId/task/:taskId?',
-    //   // path: '/task/details',
-    //   name: 'task-details',
-    //   component: taskDetails,
-    // },
   ],
 })
 

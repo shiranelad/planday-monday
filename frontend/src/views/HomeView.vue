@@ -21,11 +21,10 @@
         </span>
       </button>
     </div>
-    <!-- <picture class="jsx-4212101279 picture-component"> -->
     
       <img @click="lastBoard"
         alt="image"
-        class="jsx-4212101279 main-image regular-asset-image"
+        class="main-image"
         src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured images/Home Page - 2022 Rebrand/first_fold/image.png"
         
       />
@@ -41,9 +40,13 @@ export default {
     return {};
   },
 
+created(){
+        this.$store.commit({type: 'setSidebar', value: false});
+
+},
   methods: {
     lastBoard(){
-      this.$router.push(`/board/${this.boards[this.boards.length-1]._id}/`)
+      this.$router.push(`/board/${this.boards[this.boards.length-1]._id}/`);
     }
   },
   computed: {

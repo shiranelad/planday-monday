@@ -14,6 +14,7 @@
           v-if="group"
           :style="{ color: group.groupColor }"
           class="group-title sticky"
+          @keydown.enter="updateGroup(group, $event)"
           @blur="updateGroup(group, $event)"
         >
           {{ group.title }}

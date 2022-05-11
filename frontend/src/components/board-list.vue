@@ -1,5 +1,5 @@
 <template>
-  <section
+  <section v-if="showSideBar"
     :key="boards"
     class="board-list flex col"
     :class="{ 'is-expanded': isExpanded }"
@@ -177,6 +177,9 @@ export default {
     },
     currBoard() {
       return this.$store.getters.currBoard;
+    },
+    showSideBar(){
+      return this.$store.getters.showSideBar;
     },
   },
 };

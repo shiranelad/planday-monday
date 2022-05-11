@@ -156,6 +156,7 @@ export default {
     const board = this.$store.dispatch({ type: "getBoardById", boardId });
     this.$store.commit({ type: "setCurrBoard", board });
     socketService.on("board updated", this.refreshBoard);
+    this.$store.commit({ type: "setSidebar" , value: true});
   },
   unmounted() {
     socketService.off("board updated", this.refreshBoard);

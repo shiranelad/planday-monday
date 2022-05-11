@@ -11,6 +11,7 @@ export const boardStore = {
     taskToShow: null,
     filterBy: null,
     filteredBoard: null,
+    showSideBar: false,
   },
 
   getters: {
@@ -29,6 +30,10 @@ export const boardStore = {
     taskToShow(state) {
       return JSON.parse(JSON.stringify(state.taskToShow));
     },
+    showSideBar(state){
+      return state.showSideBar;
+    },
+
   },
   mutations: {
     // GROUP
@@ -118,6 +123,9 @@ export const boardStore = {
     },
     setTaskToShow(state, { task }) {
       state.taskToShow = task;
+    },
+    setSidebar(state, {value}) {
+      state.showSideBar = value
     },
   },
   actions: {
