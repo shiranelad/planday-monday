@@ -8,7 +8,7 @@
       <div @click="setPriority('Medium')" class="medium">Medium</div>
       <div @click="setPriority('High')" class="high">High</div>
       <div @click="setPriority('Low')" class="low">Low</div>
-      <div @click="setPriority('&nbsp;')" class="empty">&nbsp;</div>
+      <div @click="setPriority(null)" class="empty">&nbsp;</div>
     </div>
   </section>
 </template>
