@@ -11,7 +11,7 @@
       </div>
       <div @click="setStatus('Stuck')" class="stuck">Stuck</div>
       <div @click="setStatus('Done')" class="done">Done</div>
-      <div @click="setStatus('empty')" class="empty">&nbsp;</div>
+      <div @click="setStatus(null)" class="empty">&nbsp;</div>
     </div>
   </section>
 </template>

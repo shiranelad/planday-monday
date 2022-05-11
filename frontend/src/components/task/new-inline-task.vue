@@ -23,7 +23,7 @@
 <script>
 export default {
   name: 'newInlineTask',
-  emits: ['add-task'],
+  emits: ['addTask'],
   props: { groupColor: String },
   created() {
     
@@ -41,7 +41,7 @@ export default {
     },
     addTask() {
       // console.log(this.value)
-      this.$emit('add-task', this.value)
+      this.$emit('addTask', this.value)
       this.isOnFocus = false
     },
   },

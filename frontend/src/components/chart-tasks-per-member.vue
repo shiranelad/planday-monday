@@ -16,18 +16,18 @@ import {
   Title,
   Tooltip,
   Legend,
-  BarElement,
-  CategoryScale,
-  LinearScale,
+  // BarElement,
+  // CategoryScale,
+  // LinearScale,
 } from "chart.js";
 
 ChartJS.register(
   Title,
   Tooltip,
   Legend,
-  BarElement,
-  CategoryScale,
-  LinearScale
+  // BarElement,
+  // CategoryScale,
+  // LinearScale
 );
 
 export default {
@@ -85,6 +85,7 @@ overdueTasks: Array,
       chartOptions: {
         responsive: true,
         maintainAspectRatio: false,
+        plugins: { legend: { display: false }},
         scales: {
           x: {
             stacked: true,

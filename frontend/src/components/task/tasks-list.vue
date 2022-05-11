@@ -7,20 +7,6 @@
       @drop="onDrop($event)"
     >
       <Draggable v-for="eltask in eltasks" :key="eltask.id">
-        <!-- <div
-          class="side-indicator"
-          @click="setIsOptions"
-          style="
-            flex: 0 0 8px;
-            position: relative;
-            background-color: rgb(59, 44, 217);
-            color: rgb(87, 155, 252);
-            height: 36px;
-            width: 8px;
-            display: inline;
-          "
-          :style="{ backgroundColor: groupColor }"
-        ></div> -->
         <task-preview
           :task="eltask"
           :groupColor="groupColor"
@@ -28,23 +14,10 @@
         ></task-preview>
       </Draggable>
     </Container>
-    <!-- <div
-      style="
-        flex: 0 0 8px;
-        position: relative;
-        background-color: rgb(59, 44, 217);
-        color: rgb(87, 155, 252);
-        height: 36px;
-        width: 8px;
-        display: inline-block;
-      "
-      class="side-indicator"
-      :style="{ backgroundColor: groupColor }"
-    ></div> -->
     <div class="inline">
-      <new-inline-task @add-task="add" :groupColor="group.groupColor" />
+      <new-inline-task @addTask="add" :groupColor="group.groupColor" />
     </div>
-    <group-Progress :tasks="group.tasks" />
+    <group-progress :tasks="group.tasks" />
   </section>
 </template>
 
@@ -68,7 +41,6 @@ export default {
   },
   methods: {
     add(value) {
-      // console.log('tasklist:', value, this.group)
       this.$emit("add-inline", value, this.group.id);
     },
     getChildPayloadEltasks(index) {
@@ -79,12 +51,6 @@ export default {
         return
       this.eltasks = this.applyDrag(this.eltasks, dropResult)
       this.updateGroup(this.eltasks)
-
-      // if (this.eltasks !== this.applyDrag(this.eltasks, dropResult)) {
-      //   console.log("yay", dropResult);
-      //   this.eltasks = this.applyDrag(this.eltasks, dropResult);
-      //   this.updateGroup(this.eltasks);
-      // }
     },
     applyDrag(arr, dragResult) {
       const { removedIndex, addedIndex, payload } = dragResult

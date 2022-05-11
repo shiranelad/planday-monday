@@ -1,13 +1,18 @@
 .dashboard {
     border-top: 1px solid $clr7;
     padding-top: 30px;
-    gap: 10%;
+    gap: 50px;
+    flex-wrap:wrap;
+
 }
 .bar-tasks-per-member{
-    // position: absolute;
-    // left: 0;
-    // top: 0;
-    width: 45% ;
+    width:500px;
+    height:500px;
+}
+
+.border {
+    border: 2px solid gray;
+    padding: 20px;
 }
 
 .dash-header{
@@ -16,5 +21,10 @@
 }
 
 .bar-tasks-per-group{
-    width: 45%;
+    width:500px;
+    height:500px;
+}
+
+.doughnut-tasks-per-status, doughnut-tasks-per-priority{
+    margin:  30px 100px;
 }

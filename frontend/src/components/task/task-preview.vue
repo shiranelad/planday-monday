@@ -5,7 +5,7 @@
       class="btn-remove-task btn"
       @mouseover="delHover = true"
       @mouseleave="delHover = false"
-      @click="removeTask"
+      @click="setIsOptions"
       :class="{
         'btn-remove-task': delHover,
         'btn-remove-task-hidden': !delHover,
@@ -109,6 +109,11 @@
 
       <div class="right-indicator"></div>
     </div>
+     <task-options
+        @removeTask="removeTask"
+        v-if="isOptions"
+        :groupColor="group.groupColor"
+      />
   </div>
 </template>
 
@@ -194,11 +199,6 @@ export default {
     async removeTask() {
       const taskToDelete = this.task
       const board = this.$store.getters.currBoard
-      // const { boardId, groupId, task } = await this.$store.dispatch({
-      //   type: "findTask",
-      //   boardId: board._id,
-      //   taskId: taskToDelete.id,
-      // });
       await this.$store.dispatch({
         type: 'removeTask',
         boardId: board._id,

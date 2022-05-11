@@ -2,7 +2,7 @@
   // font-family: 'Roboto 500';
   color: $clr9;
   position: sticky;
-  z-index:10;
+  z-index: 10;
   left: 66px;
   background-color: $clr4;
   height: 100vh;
@@ -18,12 +18,13 @@
 
   @keyframes slideInFromLeft {
     0% {
-      transition: 0.2s ease;
+      // transition: 2.2s ease;
       width: 30px;
     }
     100% {
       width: 255;
-      // transform: translateX(0%);
+      // transition: 2.2s ease;
+      transform: translateX(0%);
     }
   }
 
@@ -40,30 +41,33 @@
     position: absolute;
     top: 20px;
     z-index: 100;
-    transition: background-color 100ms ease, padding-left 100ms ease,
-      padding-right 100ms ease, border-color 100ms ease, color 100ms ease;
+    transition: background-color 100ms ease, padding-left 100ms ease, padding-right 100ms ease, border-color 100ms ease,
+      color 100ms ease;
+    transition: background-color 100ms ease, padding-left 100ms ease, padding-right 100ms ease, border-color 100ms ease,
+      color 100ms ease;
     animation-name: slideInFromLeft;
-    animation-duration: 0.3s;
+    animation-duration: 0.15s;
     animation-timing-function: cubic-bezier(0, 0, 0.35, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: normal;
     font-size: 18px;
-    transition: transform 100ms ease;
+    transition: transform 0.3s ease;
+    transition: width 0.1s cubic-bezier(0, 0, 0.35, 1);
     // transform: rotate(-180deg);
 
     &.is-expanded {
-      // transition: transform 100ms ease;
+      transition: transform 0.3s ease;
       transform: rotate(-180deg);
-      // animation-name: slideInFromLeft;
-      // animation-duration: 0.15s;
-      // animation-timing-function: cubic-bezier(0, 0, 0.35, 1);
-      // animation-delay: 0s;
-      // animation-iteration-count: 1;
-      // animation-direction: normal;
+      animation-name: slideInFromLeft;
+      animation-duration: 1.15s;
+      animation-timing-function: cubic-bezier(0, 0, 0.35, 1);
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
 
-      &.fa-angle-right{
-          transform: rotate(180deg);
+      &.fa-angle-right {
+        transform: rotate(180deg);
       }
     }
     &:hover {
@@ -73,7 +77,7 @@
       padding-left: 16px;
     }
     &::before {
-      @include mkIcon('\f105');
+      @include mkIcon("\f105");
     }
     &.is-pinned {
       right: toRem(-14);
@@ -93,7 +97,7 @@
     .title-container {
       > h1 {
         font-size: 0.875rem;
-        font-family: 'Roboto 300';
+        font-family: "Roboto 300";
         margin: 10px 0;
         color: $clr5;
       }
@@ -102,7 +106,7 @@
       }
     }
     .ws-name {
-      font-family: 'Roboto 700';
+      font-family: "Roboto 700";
       border: 1px solid $clr5;
       padding: 10px;
       border-radius: 4px;
@@ -121,7 +125,7 @@
         line-height: 24px;
         .house-icon {
           color: $clr9;
-          @include mkIcon('\f340');
+          @include mkIcon("\f340");
           &:before {
             padding: 0 2px;
           }
@@ -150,13 +154,13 @@
   .board-names-list {
     line-height: toRem(24);
     padding-top: toRem(16);
-    
+
     .remove-board {
       // margin: 0 8px;
       align-items: center;
       justify-content: center;
       // padding: 2px 5px;
-      cursor:pointer;
+      cursor: pointer;
     }
   }
 
@@ -165,13 +169,13 @@
     display: flex;
     padding: 0 3px 0 6px;
     font-size: 0.875rem;
-    min-width:225px;
-    
+    min-width: 225px;
+
     color: $clr9;
     // border: 1px solid black;
     height: toRem(34);
     align-items: center;
-    font-family: 'Roboto 400';
+    font-family: "Roboto 400";
     // padding: 0 3px 0 6px;
     &:hover {
       background-color: $clr7;
@@ -188,12 +192,11 @@
     }
   }
 
-  .elipsis-board{
-    width:15px; 
-    height:20px;
-    opacity:0.6;
-    cursor:pointer;
-
+  .elipsis-board {
+    width: 15px;
+    height: 20px;
+    opacity: 0.6;
+    cursor: pointer;
   }
 
   &.is-expanded {
