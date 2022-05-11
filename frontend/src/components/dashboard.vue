@@ -1,5 +1,6 @@
 <template>
-  <section class="dashboard flex space-evenly justify-center wrap">
+  <section class="dashboard flex col space-evenly justify-center wrap">
+    <div>
     <article class="border flex col justify-center align-center" style="width:100%">
       <div class="flex align-center justify-center">
         <h2 style="font-size:48px">{{taskCount}} Tasks</h2>
@@ -28,7 +29,8 @@
 
       <chart-tasks-per-priority :priorities="getPriorities"></chart-tasks-per-priority>
     </article>
-
+    </div>
+<div>
     <article class="bar-tasks-per-member">
       <h2
         class="dash-header"
@@ -59,6 +61,7 @@
         :overdueGroupTasks="overdueGroupTasks"
       ></chart-high-risk>
     </article>
+    </div>
   </section>
 </template>
 
