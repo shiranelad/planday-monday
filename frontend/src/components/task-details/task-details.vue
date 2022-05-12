@@ -59,7 +59,7 @@ export default {
     addTaskComment(commentText) {
       this.addActivity(commentText);
 
-      this.updates.unshift({ creator: "Tal", content: commentText });
+      this.updates.unshift({ creator: "Guest", content: commentText });
 
       this.taskToSave.comments = JSON.parse(JSON.stringify(this.updates));
       this.$store.commit({
@@ -72,7 +72,7 @@ export default {
     },
     closeTaskDetails() {
       socketService.off("push updated", this.addTaskComment);
-      this.$store.commit({ type: "setTaskToShow", task: null });
+      this.$store.commit({ type: "setTaskToShow", task: null, group: null });
       // this.$store.dispatch({
       //   type: 'getBoardById',
       //   boardId: this.boardId,
@@ -92,7 +92,7 @@ export default {
       if (!this.taskToSave.activities) this.taskToSave.activities = [];
       this.taskToSave.activities.unshift({
         createdAt: Date(),
-        byMember: "Tal",
+        byMember: "Guest",
         txt: commentText,
       });
     },
@@ -113,7 +113,6 @@ export default {
     socketService.on('push updated', this.addTaskComment)
     if (!this.task.comments) this.updates = []
     else this.updates = [...this.task.comments]
-
     
   },
   components: {

@@ -1,35 +1,48 @@
 <template>
-  <section class="dashboard flex space-evenly justify-center wrap">
-    <article class="border flex col justify-center align-center" style="width:100%">
-      <div class="flex align-center justify-center">
-        <h2 style="font-size:48px">{{taskCount}} Tasks</h2>
+  <section class="dashboard flex align-center justify-center wrap">
+    <article class="flex justify-center align-center gap-50 kpis wrap">
+      <div
+        class="dashboard-header flex align-center justify-center col border"
+        
+      >
+        <h3 style="font-size: 36px;">{{ taskCount }} Tasks</h3>
+      
       </div>
-      <div class="flex align-center justify-center">
-        <h2 style="font-size:48px">{{members.length}} Members</h2>
+     
+      <div
+        class="task-count flex align-center justify-center col border"
+      >
+        <h2 class="done-kpi">
+          {{ ((doneTasks.length / taskCount) * 100).toFixed(0) }}% Done 
+        </h2>
+        <h2 class="high-kpi">{{ (getHighTasks / taskCount * 100).toFixed(0)}}% High <span style="font-size:24px">(Open)</span></h2>
+      </div>
+       <div
+        class="members flex align-center justify-center border col"
+      >
+        <h2 style="font-size: 36px">{{ members.length }} Members</h2>
+        <last-seen :members="board.members" />
+
       </div>
     </article>
-    <article class="doughnut-tasks-per-status ">
-      <h2
-        class="dash-header"
-        title="Chart displays tasks per status"
-      >
+    <div class="doughnuts flex justify-center align-center wrap">
+    <article class="doughnut-tasks-per-status">
+      <h2 class="dash-header" title="Chart displays tasks per status">
         Tasks per status
       </h2>
 
       <chart-tasks-per-status :statuses="getStatuses"></chart-tasks-per-status>
     </article>
-    <article class="doughnut-tasks-per-priority ">
-      <h2
-        class="dash-header"
-        title="Chart displays tasks per priority"
-      >
+    <article class="doughnut-tasks-per-priority">
+      <h2 class="dash-header" title="Chart displays tasks per priority">
         Tasks per priority
       </h2>
 
-      <chart-tasks-per-priority :priorities="getPriorities"></chart-tasks-per-priority>
+      <chart-tasks-per-priority
+        :priorities="getPriorities"
+      ></chart-tasks-per-priority>
     </article>
-
-
+</div>
     <article class="bar-tasks-per-member">
       <h2
         class="dash-header"
@@ -60,7 +73,6 @@
         :overdueGroupTasks="overdueGroupTasks"
       ></chart-high-risk>
     </article>
-
   </section>
 </template>
 
@@ -68,6 +80,7 @@
 import chartTasksPerStatus from "../components/chart-tasks-per-status.vue";
 import chartTasksPerPriority from "../components/chart-tasks-per-priority.vue";
 import chartTasksPerMember from "../components/chart-tasks-per-member.vue";
+import lastSeen from "../components/board/last-seen.vue";
 import chartHighRisk from "../components/chart-high-risk.vue";
 
 export default {
@@ -78,6 +91,7 @@ export default {
     chartTasksPerPriority,
     chartTasksPerMember,
     chartHighRisk,
+    lastSeen
   },
   created() {},
   data() {
@@ -96,39 +110,52 @@ export default {
   methods: {},
 
   computed: {
-    getPriorities(){
-this.board.groups.map((group) =>
+    getHighTasks() {
+      var countTasks = 0;
+      this.board.groups.map((group) =>
+        group.tasks.map((task) => {
+          if (
+            task.cols[3].value?.toLowerCase() === "high" &&
+            task.cols[0].value?.toLowerCase() !== "done"
+          )
+            countTasks++;
+        })
+      );
+      return countTasks;
+    },
+    getPriorities() {
+      this.board.groups.map((group) =>
         group.tasks.map((task) => {
           var priorityName = task.cols[3].value;
-          if (priorityName === "" || priorityName === null) priorityName = "No-Status";
+          if (priorityName === "" || priorityName === null)
+            priorityName = "No-Status";
           if (!this.priorities[priorityName]) {
             this.priorities[priorityName] = 0;
           }
           this.priorities[priorityName]++;
         })
       );
-      
+
       console.log(JSON.parse(JSON.stringify(this.priorities)));
       return JSON.parse(JSON.stringify(this.priorities));
-
     },
     getStatuses() {
       this.board.groups.map((group) =>
         group.tasks.map((task) => {
           var statusName = task.cols[0].value;
-          if (statusName === "" || statusName === null) statusName = "No-Status";
+          if (statusName === "" || statusName === null)
+            statusName = "No-Status";
           if (!this.statuses[statusName]) {
             this.statuses[statusName] = 0;
           }
           this.statuses[statusName]++;
         })
       );
-      this.taskCount = Object.keys(this.statuses)
-        .reduce((accumulator, key) => {
-          accumulator += this.statuses[key];
+      this.taskCount = Object.keys(this.statuses).reduce((accumulator, key) => {
+        accumulator += this.statuses[key];
 
-          return accumulator;
-        }, 0);
+        return accumulator;
+      }, 0);
       console.log(JSON.parse(JSON.stringify(this.statuses)));
       return JSON.parse(JSON.stringify(this.statuses));
     },

@@ -156,7 +156,7 @@ export default {
     const board = this.$store.dispatch({ type: "getBoardById", boardId });
     this.$store.commit({ type: "setCurrBoard", board });
     socketService.on("board updated", this.refreshBoard);
-    this.$store.commit({ type: "setSidebar" , value: true});
+    this.$store.commit({ type: "setSidebar", value: true });
   },
   unmounted() {
     socketService.off("board updated", this.refreshBoard);
@@ -164,7 +164,7 @@ export default {
   data() {
     return {
       board: null,
-      currGroup: null,
+      currentGroup: null,
       isShown: false,
       isFavorite: false,
       isChart: false,
@@ -228,7 +228,8 @@ export default {
     },
     setCurrGroup(group) {
       JSON.parse(JSON.stringify(group));
-      this.currGroup = group;
+      this.currentGroup = group;
+
     },
     refreshBoard() {
       this.$store.dispatch({
@@ -250,8 +251,8 @@ export default {
     taskToShow() {
       return this.$store.getters.taskToShow;
     },
-    currgroup() {
-      return this.currGroup;
+    currGroup() {
+      return this.$store.getters.currGroup;
     },
   },
 };

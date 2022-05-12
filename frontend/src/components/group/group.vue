@@ -55,6 +55,8 @@
     ></tasks-list>
   </section>
 </template>
+
+
 <script>
 import tasksList from "../task/tasks-list.vue";
 import groupProgress from "./group-progress.vue";
@@ -148,9 +150,6 @@ export default {
       return this.$store.getters.currBoard;
     },
   },
-  created() {
-    // console.log('page created')
-  },
+  
 };
 </script>
-<style></style>

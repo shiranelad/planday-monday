@@ -21,6 +21,9 @@ export const boardStore = {
     currBoard(state) {
       return JSON.parse(JSON.stringify(state.currBoard));
     },
+    currGroup(state) {
+      return JSON.parse(JSON.stringify(state.currGroup));
+    },
     boardToDisplay(state) {
       return JSON.parse(JSON.stringify(state.filteredBoard));
     },
@@ -121,8 +124,9 @@ export const boardStore = {
       state.currTask = task;
       // console.log(state.currTask)
     },
-    setTaskToShow(state, { task }) {
+    setTaskToShow(state, { task , group}) {
       state.taskToShow = task;
+      state.currGroup = group
     },
     setSidebar(state, {value}) {
       state.showSideBar = value

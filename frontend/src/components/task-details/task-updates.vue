@@ -2,7 +2,8 @@
   <section class="task-updates">
     <textarea
       type="text"
-      v-model="commentText"
+      ref="taskUpdate"
+      v-model.trim="commentText"
       placeholder="Write an update..."
       @keydown.enter="addTaskComment"
     />
@@ -39,27 +40,28 @@
 
 <script>
 export default {
-  name: 'task-updates',
-  emits: ['addTaskComment', 'updateToSocket'],
+  name: "task-updates",
+  emits: ["addTaskComment", "updateToSocket"],
   props: {
     msgs: Object,
     task: Object,
     boardMembers: Array,
   },
+  mounted() {},
   data() {
     return {
-      commentText: null,
+      commentText: "",
       writing: false,
       BoardNames: [],
       comments: [],
-    }
+    };
   },
   methods: {
     addTaskComment() {
       this.$emit("updateToSocket", this.commentText);
-      this.commentText = null
+      this.commentText = "";
+      this.$refs.taskUpdate.innerText = "";
     },
   },
-  
-}
+};
 </script>

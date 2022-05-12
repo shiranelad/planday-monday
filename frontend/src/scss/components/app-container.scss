@@ -1,5 +1,9 @@
 .app-container{
     display: flex;
+
     // padding-right:16px;
     // width: 95vw;
+    &.dark {
+        background-color: #181818;
+    }
 }

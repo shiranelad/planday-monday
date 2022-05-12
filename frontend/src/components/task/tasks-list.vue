@@ -84,6 +84,7 @@ export default {
     groupProgress,
     newInlineTask,
   },
+
 }
 </script>
 

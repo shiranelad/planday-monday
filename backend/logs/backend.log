@@ -78,3 +78,10 @@
 11/05/2022, 10:39:26 - INFO - Server is running on port: 3030 
 11/05/2022, 10:42:22 - INFO - Server is running on port: 3030 
 11/05/2022, 14:50:25 - INFO - Server is running on port: 3030 
+12/05/2022, 8:58:22 - INFO - Server is running on port: 3030 
+12/05/2022, 11:58:08 - ERROR - while finding board undefined | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters (sid: 7EVAJYuhTPctxGNk--zU5xZ7Uak5oldT)
+12/05/2022, 11:58:08 - ERROR - Failed to get board | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters (sid: 7EVAJYuhTPctxGNk--zU5xZ7Uak5oldT)
+12/05/2022, 12:19:49 - ERROR - while finding board undefined | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters (sid: 7EVAJYuhTPctxGNk--zU5xZ7Uak5oldT)
+12/05/2022, 12:19:49 - ERROR - Failed to get board | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters (sid: 7EVAJYuhTPctxGNk--zU5xZ7Uak5oldT)
+12/05/2022, 12:19:49 - ERROR - while finding board undefined | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters (sid: 7EVAJYuhTPctxGNk--zU5xZ7Uak5oldT)
+12/05/2022, 12:19:49 - ERROR - Failed to get board | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters (sid: 7EVAJYuhTPctxGNk--zU5xZ7Uak5oldT)

@@ -114,6 +114,8 @@
         v-if="isOptions"
         :groupColor="group.groupColor"
       />
+
+     
   </div>
 </template>
 
@@ -212,7 +214,7 @@ export default {
       this.$refs.title.focus()
     },
     openTaskDetails() {
-      this.$store.commit({ type: 'setTaskToShow', task: this.task })
+      this.$store.commit({ type: 'setTaskToShow', task: this.task, group: this.group })
     },
 
     setDate(currTask) {
@@ -234,6 +236,7 @@ export default {
     currBoardMembers() {
       return this.$store.getters.currBoard.members
     },
+
   },
 }
 </script>
