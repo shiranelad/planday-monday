@@ -1,13 +1,14 @@
 <template>
-  <section v-if="showSideBar"
+  <section
+    v-if="showSideBar"
     :key="boards"
-    class="board-list flex col"
+    class="board-sidebar flex col"
     :class="{ 'is-expanded': isExpanded }"
   >
     <div
       disabled=""
       class="collapse-btn"
-      :class="{ 'is-pinned': isExpanded, 'is-expanded' : isExpanded }"
+      :class="{ 'is-pinned': isExpanded, 'is-expanded': isExpanded }"
       @click="toggleExpanded"
     >
       <i class="collapse-icon fa fa-angle-right"></i>
@@ -58,21 +59,22 @@
               clip-rule="evenodd"
             ></path>
           </svg>
-          <span>Search</span>
+          <input
+            placeholder="Search"
+            dir="ltr"
+            v-model="searchBy"
+            @input="searchBoard"
+          />
         </button>
       </div>
       <div class="spacer"></div>
       <div class="boards">
-        <section class="board-names-list">
-          <board-preview
-            v-for="board in boards"
-            :key="board"
-            :board="board"
-            @chooseBoard="chooseBoard"
-            @setBoardUpdate="setBoardUpdate"
-            @updateBoard="updateBoard"
-          ></board-preview>
-                 </section>
+        <board-list
+          :boards="boardsToShow"
+          @chooseBoard="chooseBoard"
+          @setBoardUpdate="setBoardUpdate"
+          @updateBoard="updateBoard"
+        />
       </div>
     </div>
   </section>
@@ -80,21 +82,23 @@
 
 <script>
 import { ElMessage, ElMessageBox } from "element-plus";
-import boardPreview from "../components/board-preview.vue";
+import boardList from "./board/board-list.vue";
 
 export default {
+  name: "board-sidebar",
+  props: { boards: Object },
   components: {
-    boardPreview,
+    boardList,
   },
+  mounted() {},
 
   data() {
     return {
       isExpanded: true,
+      searchBy: "",
     };
   },
   methods: {
-  
-
     async addBoard() {
       try {
         const { value } = await ElMessageBox.prompt(
@@ -126,9 +130,6 @@ export default {
     },
 
     async setBoardUpdate(value, board) {
-      // if (value === "rename") {
-      //   updateBoard()
-      // }
       if (value === "remove") {
         await this.$store.dispatch({
           type: "removeBoard",
@@ -142,14 +143,8 @@ export default {
         });
       }
     },
-    // async updateBoard($event) {
-    //   console.log($event)
-    //   var title = $event.target.innerText
-    //   await this.$store.dispatch({ type: "saveBoard", title});
-    // },
+
     async updateBoard(title, board) {
-      // console.log($event)
-      // var title = $event.target.innerText
       await this.$store.dispatch({
         type: "saveBoard",
         title,
@@ -168,17 +163,44 @@ export default {
       } catch (err) {
         console.log(err);
       }
-      // }
+    },
+    onDrop(dropResult) {
+      // const board = JSON.parse(JSON.stringify(this.currBoard));
+      const boards = this.applyDrag(this.boards, dropResult);
+    },
+    applyDrag(arr, dragResult) {
+      const { removedIndex, addedIndex, payload } = dragResult;
+
+      if (removedIndex === null && addedIndex === null) return arr;
+      const result = [...arr];
+      let taskToAdd = payload;
+
+      if (removedIndex !== null) {
+        taskToAdd = result.splice(removedIndex, 1)[0];
+      }
+      if (addedIndex !== null) {
+        result.splice(addedIndex, 0, taskToAdd);
+      }
+      this.updateGroupsOrder(result);
+      return result;
     },
   },
   computed: {
-    boards() {
-      return this.$store.getters.boards;
+    // boards() {
+    //   return this.$store.getters.boards;
+    // },
+
+    boardsToShow() {
+      if (!this.boards || !this.boards.length) return;
+      if (!this.searchBy) return this.boards;
+      const regex = new RegExp(this.searchBy, "i");
+      return this.boards.filter((board) => regex.test(board.title));
     },
+
     currBoard() {
       return this.$store.getters.currBoard;
     },
-    showSideBar(){
+    showSideBar() {
       return this.$store.getters.showSideBar;
     },
   },

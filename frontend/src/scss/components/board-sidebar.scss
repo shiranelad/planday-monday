@@ -1,4 +1,4 @@
-.board-list {
+.board-sidebar {
   // font-family: 'Roboto 500';
   color: $clr9;
   position: sticky;
@@ -41,33 +41,34 @@
     position: absolute;
     top: 20px;
     z-index: 100;
-    transition: background-color 100ms ease, padding-left 100ms ease, padding-right 100ms ease, border-color 100ms ease,
+
+    transition: background-color 100ms ease, padding-left 100ms ease, padding-right 100ms ease, border-color 100ms ease, transform 0.3s ease,
       color 100ms ease;
-    transition: background-color 100ms ease, padding-left 100ms ease, padding-right 100ms ease, border-color 100ms ease,
+    transition: background-color 100ms ease, padding-left 100ms ease, padding-right 100ms ease, border-color 100ms ease, transform 0.3s ease,
       color 100ms ease;
     animation-name: slideInFromLeft;
-    animation-duration: 0.15s;
+    // animation-duration: 0.15s;
     animation-timing-function: cubic-bezier(0, 0, 0.35, 1);
-    animation-delay: 0s;
+    // animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: normal;
     font-size: 18px;
     transition: transform 0.3s ease;
-    transition: width 0.1s cubic-bezier(0, 0, 0.35, 1);
-    // transform: rotate(-180deg);
+    // transition: width 0.1s cubic-bezier(0, 0, 0.35, 1);
 
     &.is-expanded {
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, rotate 0.3s ease;
       transform: rotate(-180deg);
       animation-name: slideInFromLeft;
-      animation-duration: 1.15s;
-      animation-timing-function: cubic-bezier(0, 0, 0.35, 1);
-      animation-delay: 0s;
-      animation-iteration-count: 1;
-      animation-direction: normal;
-
+      // animation-duration: 1.15s;
+      // animation-timing-function: cubic-bezier(0, 0, 0.35, 1);
+      // animation-delay: 0s;
+      // animation-iteration-count: 1;
+      // animation-direction: normal;
+      
       &.fa-angle-right {
         transform: rotate(180deg);
+        transition: transform 0.3s ease;
       }
     }
     &:hover {
@@ -189,6 +190,24 @@
       margin: 0 8px;
       align-items: center;
       padding: 2px 5px;
+    }
+    > input {
+      border: none;
+      background-color: $clr4;      
+      align-items: center;
+      margin: 0 8px;
+
+      &::placeholder {
+        color: $clr9;
+      }
+      &:hover{
+        background-color: $clr7;
+      }
+      &:focus-visible{
+        outline-offset: 0px;
+        outline: none;
+      }
+      padding: 1px 2px 1px 2px;
     }
   }
 

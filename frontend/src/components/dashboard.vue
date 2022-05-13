@@ -1,48 +1,51 @@
 <template>
   <section class="dashboard flex align-center justify-center wrap">
     <article class="flex justify-center align-center gap-50 kpis wrap">
-      <div
-        class="dashboard-header flex align-center justify-center col border"
-        
-      >
-        <h3 style="font-size: 36px;">{{ taskCount }} Tasks</h3>
-      
+      <div class="dashboard-header flex align-center justify-center col border">
+        <h3 style="font-size: 48px">{{ taskCount }} Tasks</h3>
       </div>
-     
+
       <div
-        class="task-count flex align-center justify-center col border"
+        class="task-count flex align-center justify-center col border gap-30"
       >
         <h2 class="done-kpi">
-          {{ ((doneTasks.length / taskCount) * 100).toFixed(0) }}% Done 
+          {{ ((doneTasks.length / taskCount) * 100).toFixed(0) }}%
+          <span class="done-kpi">Done </span>
         </h2>
-        <h2 class="high-kpi">{{ (getHighTasks / taskCount * 100).toFixed(0)}}% High <span style="font-size:24px">(Open)</span></h2>
+
+        <h2 class="high-kpi">
+          {{ ((getHighTasks / taskCount) * 100).toFixed(0) }}% High
+          <span style="font-size: 24px">(Open)</span>
+        </h2>
       </div>
-       <div
-        class="members flex align-center justify-center border col"
-      >
-        <h2 style="font-size: 36px">{{ members.length }} Members</h2>
-        <last-seen :members="board.members" />
 
+      <div class="members flex align-center justify-center border col">
+        <h2 >{{ members.length }} Members</h2>
+        <last-seen :members="board.members" class="members-kpi" />
       </div>
     </article>
-    <div class="doughnuts flex justify-center align-center wrap">
-    <article class="doughnut-tasks-per-status">
-      <h2 class="dash-header" title="Chart displays tasks per status">
-        Tasks per status
-      </h2>
+    <div class="doughnuts flex align-center wrap">
+      <article class="doughnut-tasks-per-status">
+        <h2 class="dash-header" title="Chart displays tasks per status">
+          Tasks per status
+        </h2>
 
-      <chart-tasks-per-status :statuses="getStatuses"></chart-tasks-per-status>
-    </article>
-    <article class="doughnut-tasks-per-priority">
-      <h2 class="dash-header" title="Chart displays tasks per priority">
-        Tasks per priority
-      </h2>
+        <chart-tasks-per-status
+          :statuses="getStatuses"
+        ></chart-tasks-per-status>
+      </article>
+      <article class="doughnut-tasks-per-priority">
+        <h2 class="dash-header" title="Chart displays tasks per priority">
+          Tasks per priority
+        </h2>
 
-      <chart-tasks-per-priority
-        :priorities="getPriorities"
-      ></chart-tasks-per-priority>
-    </article>
-</div>
+        <chart-tasks-per-priority
+          :priorities="getPriorities"
+        ></chart-tasks-per-priority>
+      </article>
+    </div>
+        <div class="bars flex wrap align-center">
+
     <article class="bar-tasks-per-member">
       <h2
         class="dash-header"
@@ -73,6 +76,7 @@
         :overdueGroupTasks="overdueGroupTasks"
       ></chart-high-risk>
     </article>
+    </div>
   </section>
 </template>
 
@@ -91,7 +95,7 @@ export default {
     chartTasksPerPriority,
     chartTasksPerMember,
     chartHighRisk,
-    lastSeen
+    lastSeen,
   },
   created() {},
   data() {
@@ -136,7 +140,6 @@ export default {
         })
       );
 
-      console.log(JSON.parse(JSON.stringify(this.priorities)));
       return JSON.parse(JSON.stringify(this.priorities));
     },
     getStatuses() {
@@ -156,7 +159,6 @@ export default {
 
         return accumulator;
       }, 0);
-      console.log(JSON.parse(JSON.stringify(this.statuses)));
       return JSON.parse(JSON.stringify(this.statuses));
     },
     getPerMemberData() {

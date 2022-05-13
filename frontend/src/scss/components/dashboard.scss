@@ -12,11 +12,18 @@
 
 .dashboard-header, .members,
 .task-count {
-    min-width: 250px;
+    min-width: 400px;
     height: 200px;
     text-align: center;
 }
 
+.members {
+    font-size: 32px;
+    > h2 {
+        margin-bottom: 20px;
+    }
+
+}
 .high-kpi {
     font-size: 36px;
     color: #ec3390;
@@ -24,7 +31,7 @@
 
 .done-kpi {
     font-size: 36px;
-    color: green;
+    color: #00c875;
 }
 
 .bar-tasks-per-member {
@@ -52,10 +59,13 @@ doughnut-tasks-per-priority {
     margin: 30px 100px;
     justify-content: center;
 }
-.bar-charts,
-.doughnut-charts {
+.bars,
+.doughnuts {
     justify-content: center;
     align-items: center;
-    width: fit-content;
-    height: 500px;
+    flex-basis: fit-content;
+    gap: 80px;
+    // width: fit-content;
+    // height: 500px;
+    
 }

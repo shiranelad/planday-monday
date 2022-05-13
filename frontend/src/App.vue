@@ -1,14 +1,14 @@
 <template>
   <section class="app-container container">
     <app-sidebar />
-    <border-list />
+    <board-sidebar :boards="boards"/>
     <router-view />
   </section>
 </template>
 
 <script>
 import appSidebar from "./components/app-sidebar.vue";
-import borderList from "./components/board-list.vue";
+import boardSidebar from "./components/board-sidebar.vue";
 import group from "./components/group/group.vue";
 export default {
   name: "app",
@@ -18,8 +18,15 @@ export default {
   methods: {},
   components: {
     appSidebar,
-    borderList,
+    boardSidebar,
     group,
   },
+
+  computed:{
+    boards(){
+      console.log('BOARDS', this.$store.getters.boards)
+      return this.$store.getters.boards
+    }
+  }
 };
 </script>
