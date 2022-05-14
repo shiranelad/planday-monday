@@ -29,6 +29,88 @@
             </div>
           </div>
           <div class="board-header-right flex align-center">
+            <div>
+              Change Color
+              <select @change="changeColor($event)">
+                <option
+                  value="#fff"
+                  style="
+                    background-color: #fff;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                  "
+                >
+                  &nbsp;
+                </option>
+                <option
+                  value="#CBE4F9"
+                  style="
+                    background-color: #cbe4f9;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                  "
+                >
+                  &nbsp;
+                </option>
+                <option
+                  value="#CDF5F6"
+                  style="
+                    background-color: #cdf5f6;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                  "
+                >
+                  &nbsp;
+                </option>
+                <option
+                  value="#EFF9DA"
+                  style="
+                    background-color: #eff9da;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                  "
+                >
+                  &nbsp;
+                </option>
+                <option
+                  value="#F9EBDF"
+                  style="
+                    background-color: #f9ebdf;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                  "
+                >
+                  &nbsp;
+                </option>
+                <option
+                  value="#F9D8D6"
+                  style="
+                    background-color: #f9d8d6;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                  "
+                >
+                  &nbsp;
+                </option>
+                <option
+                  value="#D6CDEA"
+                  style="
+                    background-color: #d6cdea;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                  "
+                >
+                  &nbsp;
+                </option>
+              </select>
+            </div>
             <!-- LAST SEEN CMP -->
             <div class="last-seen flex">
               <button class="btn last h-btn">Last seen</button>
@@ -169,10 +251,17 @@ export default {
       isShown: false,
       isFavorite: false,
       isChart: false,
-      filterBy: null, //{ status: '', priority: '', title: ''}
+      filterBy: null, //{ status: '', priority: '', title: ''},
     };
   },
   methods: {
+    changeColor(ev) {
+      console.log(ev.target.value);
+      this.$store.commit({
+        type: "changeBGThemeColor",
+        color: ev.target.value
+      });
+    },
     setFilter(filterBy) {
       // this.$store.commit({ type: "setFilter", filterBy });
 

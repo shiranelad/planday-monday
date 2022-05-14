@@ -1,5 +1,5 @@
 <template>
-  <section class="app-container container">
+  <section class="app-container container" :style="{'background-color' : bgColor }">
     <app-sidebar />
     <board-sidebar :boards="boards"/>
     <router-view />
@@ -26,6 +26,9 @@ export default {
     boards(){
       // console.log('BOARDS', this.$store.getters.boards)
       return this.$store.getters.boards
+    },
+    bgColor(){
+      return this.$store.getters.getBgColor
     }
   }
 };

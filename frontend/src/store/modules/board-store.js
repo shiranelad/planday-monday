@@ -12,6 +12,7 @@ export const boardStore = {
     filterBy: null,
     filteredBoard: null,
     showSideBar: false,
+    bgColor: '#fff'
   },
 
   getters: {
@@ -36,9 +37,17 @@ export const boardStore = {
     showSideBar(state){
       return state.showSideBar;
     },
+    getBgColor(state){
+      return state.bgColor
+    }
 
   },
   mutations: {
+    changeBGThemeColor(state, { color }){
+      console.log(state.bgColor)
+      console.log(color)
+      state.bgColor = color
+    },
     // GROUP
     updateBoard({ currBoard }, { group, task }) {
       // console.log('update Board:', task);
