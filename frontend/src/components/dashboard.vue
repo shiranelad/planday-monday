@@ -24,19 +24,19 @@
         <last-seen :members="board.members" class="members-kpi" />
       </div>
     </article>
-    <div class="doughnuts flex align-center wrap">
-      <article class="doughnut-tasks-per-status">
-        <h2 class="dash-header" title="Chart displays tasks per status">
-          Tasks per status
+    <div class="doughnuts flex align-center wrap space-between">
+      <article class="doughnut-tasks-per-status flex col space-between">
+        <h2 class="dash-header" title="Chart displays tasks per status" >
+          Tasks per Status
         </h2>
 
         <chart-tasks-per-status
           :statuses="getStatuses"
         ></chart-tasks-per-status>
       </article>
-      <article class="doughnut-tasks-per-priority">
+      <article class="doughnut-tasks-per-priority flex col space-between ">
         <h2 class="dash-header" title="Chart displays tasks per priority">
-          Tasks per priority
+          Tasks per Priority
         </h2>
 
         <chart-tasks-per-priority
@@ -44,14 +44,14 @@
         ></chart-tasks-per-priority>
       </article>
     </div>
-        <div class="bars flex wrap align-center">
+        <div class="bars flex wrap align-center ">
 
-    <article class="bar-tasks-per-member">
+    <article class="bar-tasks-per-member ">
       <h2
         class="dash-header"
         title="Chart displays tasks per member and categorizes them as open, done and overdue"
       >
-        Open/Closed/Overdue tasks per team member
+        Task Classification per Team Member
       </h2>
       <chart-tasks-per-member
         :members="members"
@@ -61,12 +61,12 @@
         :overdueTasks="overdueTasks"
       ></chart-tasks-per-member>
     </article>
-    <article class="bar-tasks-per-group">
+    <article class="bar-tasks-per-group ">
       <h2
         class="dash-header"
         title="Chart displays high risk tasks per member. These are tasks of high priority that are either over due, or have not started."
       >
-        High Risk Tasks
+        High Risk Tasks per Group
       </h2>
       <chart-high-risk
         :groups="groups"

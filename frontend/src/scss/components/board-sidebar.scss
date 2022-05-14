@@ -181,6 +181,7 @@
     &:hover {
       background-color: $clr7;
       border-radius: 4px;
+      
     }
     .svg-icon {
       margin-bottom: 3px;
@@ -193,7 +194,7 @@
     }
     > input {
       border: none;
-      background-color: $clr4;      
+      background-color: inherit;      
       align-items: center;
       margin: 0 8px;
 
