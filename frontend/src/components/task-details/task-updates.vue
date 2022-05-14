@@ -5,7 +5,6 @@
       ref="taskUpdate"
       v-model.trim="commentText"
       placeholder="Write an update..."
-      @keydown.enter="addTaskComment"
     />
     <div class="activity-action-container flex">
       <button class="update" @mousedown="addTaskComment">Update</button>
@@ -13,7 +12,6 @@
     <ul v-if="task" class="update-list clean-list">
       <li v-for="(msg, idx) in msgs" :key="idx">
         <div class="user-container flex">
-          <!-- <img class="user-img" :src="msg.img" alt="" /> -->
           <h4 class="comment-title">{{ msg.creator }}</h4>
           <div class="online-indicator"></div>
         </div>

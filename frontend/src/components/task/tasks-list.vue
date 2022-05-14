@@ -6,7 +6,7 @@
       orientation="vertical"
       @drop="onDrop($event)"
     >
-      <Draggable v-for="eltask in eltasks" :key="eltask.id">
+      <Draggable v-for="eltask in tasks" :key="eltask.id">
         <task-preview
           :task="eltask"
           :groupColor="groupColor"

@@ -48,14 +48,13 @@
     <tasks-list
       @add-inline="addTask"
       @updateGroupAfterDnd="updateGroupAfterDnd"
-      :tasks="group.tasks"
+      :tasks="tasksToShow"
       :group="group"
       :groupColor="group.groupColor"
       style="margin-top: 5px"
     ></tasks-list>
   </section>
 </template>
-
 
 <script>
 import tasksList from "../task/tasks-list.vue";
@@ -68,6 +67,7 @@ export default {
   props: {
     group: Object,
     board: Object,
+    filterBy: Object,
   },
   components: {
     tasksList,
@@ -81,6 +81,7 @@ export default {
       isOptions: false,
       ascDesc: 1,
       isSender: false,
+      // filterBy: { status: '', priority: '', title: ''}
     };
   },
   methods: {
@@ -131,7 +132,6 @@ export default {
       });
       // socketService.emit("item dragged", tasksAfterDnd);
       // console.log(tasksAfterDnd);
-
     },
     setCurrGroup() {
       this.$emit("setCurrGroup", this.group);
@@ -143,6 +143,20 @@ export default {
     },
   },
   computed: {
+    tasksToShow() {
+      if (!this.group.tasks || !this.group.tasks.length) return;
+      if (!this.filterBy) return this.group.tasks;
+      const statusReg = new RegExp(this.filterBy.status, "i");
+      const priorityReg = new RegExp(this.filterBy.priority, "i");
+      const titleReg = new RegExp(this.filterBy.title, "i");
+      // return this.group.tasks.filter(
+      return this.group.tasks.filter(
+        (task) =>
+          statusReg.test(task.cols[0].value) &&
+          priorityReg.test(task.cols[3].value) &&
+          titleReg.test(task.title)
+      );
+    },
     getTasks() {
       return this.group.tasks;
     },
@@ -150,6 +164,5 @@ export default {
       return this.$store.getters.currBoard;
     },
   },
-  
 };
 </script>

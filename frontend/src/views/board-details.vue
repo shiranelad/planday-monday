@@ -81,7 +81,7 @@
             </el-dropdown-menu>
           </template>
         </el-dropdown>
-        <app-filter @filter="onFilter" />
+        <app-filter @filter="setFilter" />
       </div>
 
       <add-group-task
@@ -97,6 +97,7 @@
         <Container orientation="vertical" @drop="onDrop">
           <Draggable v-for="group in currBoard.groups" :key="group.id">
             <group-cmp
+              :filterBy="filterBy"
               :group="group"
               :board="currBoard"
               @setCurrGroup="setCurrGroup"
@@ -168,11 +169,14 @@ export default {
       isShown: false,
       isFavorite: false,
       isChart: false,
+      filterBy: null, //{ status: '', priority: '', title: ''}
     };
   },
   methods: {
-    onFilter(filterBy) {
-      this.$store.commit({ type: "setFilter", filterBy });
+    setFilter(filterBy) {
+      // this.$store.commit({ type: "setFilter", filterBy });
+
+      this.filterBy = JSON.parse(JSON.stringify(filterBy));
     },
     addNewTask() {
       this.$store.dispatch({
@@ -229,7 +233,6 @@ export default {
     setCurrGroup(group) {
       JSON.parse(JSON.stringify(group));
       this.currentGroup = group;
-
     },
     refreshBoard() {
       this.$store.dispatch({

@@ -1,6 +1,6 @@
 <template>
   <section class="filter flex">
-    <!-- <button
+    <button
       @click="isSearch = !isSearch"
       class="btn search"
       :class="{ 'd-none': isSearch }"
@@ -8,7 +8,6 @@
       Search
       <div v-if="setSearch">
         <input
-          @enter="setSearchTerm"
           @blur="isSearch = false"
           type="text"
           name="search"
@@ -18,11 +17,11 @@
     <input
       type="text"
       class="search"
-      v-model="filterBy"
-      @input="onFilter"
+      v-model="filterBy.title"
+      @input="setFilter"
       placeholder="Search..."
       :class="{ 'd-none': !isSearch }"
-    /> -->
+    />
     <button class="btn person">Person</button>
 
     <button class="btn filter">Filter</button>
@@ -34,16 +33,18 @@
 <script>
 export default {
   name: 'board-filter',
+  emits: ['filter'],
   data() {
     return {
       isSearch: false,
-      filterBy: '',
+      filterBy: {status: '', priority: '', title: ''},
       setSearch: false,
     }
   },
   methods: {
-    onFilter() {
-      console.log(this.filterBy);
+    setFilter() {
+      // console.log(this.filterBy);
+      // console.log(this.filterBy);
       this.$emit("filter", this.filterBy);
     },
   },
