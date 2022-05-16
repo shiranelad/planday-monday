@@ -121,8 +121,6 @@ export default {
       this.$store.dispatch({ type: "updateGroup", groupToUpdate });
     },
     async updateGroupAfterDnd(tasksAfterDnd) {
-      // socketService.on("refresh boards", this.refreshBoards());
-
       this.isSender = true;
       this.group.tasks = tasksAfterDnd;
       // this.$store.commit({ type: "updateGroup", updatedGroup: this.group });
@@ -130,8 +128,6 @@ export default {
         type: "updateGroup",
         groupToUpdate: JSON.parse(JSON.stringify(this.group)),
       });
-      // socketService.emit("item dragged", tasksAfterDnd);
-      // console.log(tasksAfterDnd);
     },
     setCurrGroup() {
       this.$emit("setCurrGroup", this.group);

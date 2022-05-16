@@ -43,11 +43,12 @@
       @include mkIcon("\f3d4");
     }
     .filter-modal {
-      min-width:320px;
+      min-width:340px;
       padding-top:10px;
       border: 1px solid black;
+      border-radius: 20px;
       background-color: $clr8;
-      height: 220px;
+      height: 230px;
       z-index: 10;
       top: 40px;
       left: 100px;
@@ -56,16 +57,18 @@
         text-align: center;
       }
       .filter-categories {
+        margin-top: 10px;
         text-align: center;
         > div > ul {
           // border: 1px solid black;
+          margin: 0;
           color:white;
           list-style: none;
           align-items: flex-start;
           padding: 0;
           margin-right: 5px;
           > li {
-            width: 140px;
+            width: 150px;
             padding: 5px 10px;
             border-radius: 5px;
             margin-top: 1px;

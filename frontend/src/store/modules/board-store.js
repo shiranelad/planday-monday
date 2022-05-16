@@ -318,6 +318,20 @@ export const boardStore = {
         });
       }
     },
+    async updateBoardsOrder({ dispatch, commit, state }, { newBoards }) {
+      const boards = JSON.parse(JSON.stringify(newBoards));
+      console.log(boards)
+      // try {
+      //   const boardToUpdate = await boardService.save(board);
+      //   commit({ type: 'setCurrBoard', board: boardToUpdate });
+      // } catch (err) {
+      //   console.log("Couldn't save board", err);
+      //   commit({
+      //     type: 'setIsError',
+      //     isError: true,
+      //   });
+      // }
+    },
     //TASK
     async addTask({ commit, state }, { groupIdx, value }) {
       const board = JSON.parse(JSON.stringify(state.currBoard));

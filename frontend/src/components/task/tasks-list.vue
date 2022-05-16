@@ -17,7 +17,7 @@
     <div class="inline">
       <new-inline-task @addTask="add" :groupColor="group.groupColor" />
     </div>
-    <group-progress :tasks="group.tasks" />
+    <group-progress :tasks="tasks" />
   </section>
 </template>
 
