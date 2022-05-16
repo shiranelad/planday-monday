@@ -1,7 +1,7 @@
 <template>
   <section @click="toggleShow" :class="statusClass" class="status-picker">
     <div class="status">
-      {{ task.cols[3].value === "" ? "&nbsp;" : task.cols[3].value }}
+      {{ task.cols[3].value === "empty" ? "&nbsp;" : task.cols[3].value }}
     </div>
     <div v-if="menuOpen" class="picker-box">
       <!-- TODO - change back to working on it -->

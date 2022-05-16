@@ -29,7 +29,7 @@
             </div>
           </div>
           <div class="board-header-right flex align-center">
-            <div>
+            <label>
               Change Color
               <select @change="changeColor($event)">
                 <option
@@ -38,7 +38,6 @@
                     background-color: #fff;
                     width: 20px;
                     height: 20px;
-                    border-radius: 50%;
                   "
                 >
                   &nbsp;
@@ -49,7 +48,6 @@
                     background-color: #cbe4f9;
                     width: 20px;
                     height: 20px;
-                    border-radius: 50%;
                   "
                 >
                   &nbsp;
@@ -60,7 +58,6 @@
                     background-color: #cdf5f6;
                     width: 20px;
                     height: 20px;
-                    border-radius: 50%;
                   "
                 >
                   &nbsp;
@@ -71,7 +68,6 @@
                     background-color: #eff9da;
                     width: 20px;
                     height: 20px;
-                    border-radius: 50%;
                   "
                 >
                   &nbsp;
@@ -82,7 +78,6 @@
                     background-color: #f9ebdf;
                     width: 20px;
                     height: 20px;
-                    border-radius: 50%;
                   "
                 >
                   &nbsp;
@@ -93,7 +88,6 @@
                     background-color: #f9d8d6;
                     width: 20px;
                     height: 20px;
-                    border-radius: 50%;
                   "
                 >
                   &nbsp;
@@ -104,13 +98,12 @@
                     background-color: #d6cdea;
                     width: 20px;
                     height: 20px;
-                    border-radius: 50%;
                   "
                 >
                   &nbsp;
                 </option>
               </select>
-            </div>
+            </label>
             <!-- LAST SEEN CMP -->
             <div class="last-seen flex">
               <button class="btn last h-btn">Last seen</button>

@@ -146,15 +146,19 @@ export default {
     tasksToShow() {
       if (!this.group.tasks || !this.group.tasks.length) return;
       if (!this.filterBy) return this.group.tasks;
-      const statusReg = new RegExp(this.filterBy.status, "i");
-      const priorityReg = new RegExp(this.filterBy.priority, "i");
+      var filterStatus = !this.filterBy.status?.length ? ['working on it', 'done', 'empty', 'stuck'] : this.filterBy.status
+      var priorityStatus = !this.filterBy.priority?.length ? ['high', 'low', 'empty', 'medium'] : this.filterBy.priority
       const titleReg = new RegExp(this.filterBy.title, "i");
-      // return this.group.tasks.filter(
+
       return this.group.tasks.filter(
-        (task) =>
-          statusReg.test(task.cols[0].value) &&
-          priorityReg.test(task.cols[3].value) &&
-          titleReg.test(task.title)
+        (task) => {
+          var statusReg = new RegExp(task.cols[0].value, 'i')
+          if(!task.cols[0].value) task.cols[0].value = 'empty'
+          
+          if(!task.cols[3].value) task.cols[3].value = 'empty'
+          var priorityReg = new RegExp(task.cols[3].value, 'i')
+          return (titleReg.test(task.title) && statusReg.exec(filterStatus) && priorityReg.exec(priorityStatus))
+        }
       );
     },
     getTasks() {
